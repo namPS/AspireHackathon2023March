@@ -1,5 +1,6 @@
 import React from "react";
 import "./LandingPage.css";
+import axios from "axios";
 
 function LandingPage(props) {
   const {
@@ -15,6 +16,27 @@ function LandingPage(props) {
     login,
   } = props;
 
+  const [clientData, setClientData] = React.useState(null);
+  const [clientId, setClientId] = React.useState(null);
+
+  const baseURL = "https://us-central1-burner-manchoud1.cloudfunctions.net/bbbhackathon";
+
+  const fetchClientData = () => {
+    if (clientId) {
+      axios.post(baseURL, {
+        // "Customer_ID": "000006"
+        "Customer_ID": clientId
+      })
+        .then((response) => {
+          setClientData(response.data);
+        });
+    }
+
+  }
+
+  console.log("clientId", clientId)
+  console.log("clientData", clientData)
+
   return (
     <div className="container-center-horizontal">
       <div className="landing-page screen">
@@ -27,8 +49,10 @@ function LandingPage(props) {
           <div className="rectangle-32"></div>
           <img className="mesh-08-1" src={mesh08} alt="Mesh-08" />
           <div className="customer-id jost-bold-big-stone-24px">{customerId}</div>
-          <input className="customer-id-1" name="customerid" placeholder={inputPlaceholder} type={inputType} required />
-          <div className="login jost-bold-big-stone-24px">{login}</div>
+          <input className="customer-id-1" name="customerid" placeholder={inputPlaceholder} type={inputType} onChange={(e) => setClientId(e.target.value)} required />
+          <button className="login jost-bold-big-stone-24px" onClick={fetchClientData}>
+            {login}
+          </button>
         </div>
       </div>
     </div>

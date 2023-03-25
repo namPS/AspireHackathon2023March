@@ -150,6 +150,24 @@ input:focus {
   left: 725px;
 }
 
+button, input[type="submit"] {
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.login {
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 723px;
+  left: 725px;
+}
+
 .clear {
   min-width: 181px;
   border: 1px;
