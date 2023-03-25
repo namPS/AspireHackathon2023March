@@ -1,0 +1,108 @@
+:root { 
+  --banana-mania: #f3e9b2;
+  --bdazzled-blue: #3b5896;
+  --big-stone: #1f2b3f;
+  --black: #000000;
+  --black-haze: #f7f7f7;
+  --cararra: #ebebeb;
+  --cerulean-frost: #6da2d9;
+  --del-rio: #ac9892;
+  --fruit-salad: #639e51;
+  --gallery: #efefef;
+  --licorice: #121212;
+  --mine-shaft: #303030;
+  --silver: #bdbdbd;
+  --tangerine: #fa8900;
+  --white: #ffffff;
+ 
+  --font-size-l: 16px;
+  --font-size-m: 15px;
+  --font-size-s: 10px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 25px;
+  --font-size-xxxl: 45px;
+  --font-size-xxxxl: 48px;
+ 
+  --font-family-jost: "Jost", Helvetica;
+  --font-family-jost-regular: "Jost-Regular", Helvetica;
+  --font-family-manrope: "Manrope", Helvetica;
+  --font-family-poppins: "Poppins", Helvetica;
+}
+.poppins-medium-cararra-15px {
+  color: var(--cararra);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.poppins-medium-big-stone-15px {
+  color: var(--big-stone);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.jost-extra-bold-white-45px {
+  color: var(--white);
+  font-family: var(--font-family-jost);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 800;
+}
+
+.poppins-medium-white-15px {
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.poppins-medium-black-16px {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.jost-bold-big-stone-24px {
+  color: var(--big-stone);
+  font-family: var(--font-family-jost);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.poppins-medium-fruit-salad-15px {
+  color: var(--fruit-salad);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.poppins-medium-tangerine-15px {
+  color: var(--tangerine);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.manrope-bold-mine-shaft-10px {
+  color: var(--mine-shaft);
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.manrope-normal-silver-10px {
+  color: var(--silver);
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}

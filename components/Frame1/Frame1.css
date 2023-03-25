@@ -1,0 +1,138 @@
+.clear {
+  align-items: flex-start;
+  border: 1px none;
+  display: flex;
+  min-width: 181px;
+  overflow-x: hidden;
+}
+
+.overlap-group1-4 {
+  height: 252px;
+  position: relative;
+  width: 181px;
+}
+
+.overlap-group-8 {
+  align-items: flex-start;
+  background-color: var(--cerulean-frost);
+  border-radius: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  left: 0;
+  min-height: 252px;
+  padding: 31px 9px;
+  position: absolute;
+  top: 0;
+  width: 168px;
+}
+
+.text-4 {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: 106px;
+  min-height: 38px;
+  width: 125px;
+}
+
+.sunny {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 8px;
+  min-height: 23px;
+}
+
+.sun-cloud {
+  cursor: pointer;
+  display: flex;
+  height: 119px;
+  left: 65px;
+  position: absolute;
+  top: 0;
+  transition: all 1s ease-in-out;
+  width: 116px;
+}
+
+.sun-cloud:hover {
+  transform: translate(0, -5px);
+}
+
+.sun {
+  align-items: flex-start;
+  border-radius: 164px;
+  display: flex;
+  height: 119px;
+  overflow: hidden;
+  width: 116.43px;
+}
+
+.overlap-group-9 {
+  height: 193px;
+  margin-left: -14px;
+  margin-top: -25.0px;
+  position: relative;
+  width: 182px;
+}
+
+.base-color {
+  background: radial-gradient(50% 50% at 50% 50%, rgb(244.37, 48.15, 34.62) 14.3%, rgb(249, 128, 41) 53.14%, rgb(253, 201, 18) 84.38%, rgb(255, 240.66, 31.88) 100%);
+  border-radius: 82px;
+  height: 164px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(180.00deg);
+  width: 164px;
+}
+
+.inner-shadow-left {
+  background: radial-gradient(50% 50% at 50% 50%, rgb(244.37, 48.15, 34.62) 64.01%, rgba(245.96, 75.48, 36.8, 0.66) 81.71%, rgba(249, 128, 41, 0) 95.81%, rgba(255, 236, 30, 0) 100%);
+  border-radius: 82px;
+  filter: blur(16px);;
+  height: 164px;
+  left: 14px;
+  position: absolute;
+  top: 25px;
+  transform: rotate(178.56deg);
+  width: 164px;
+}
+
+.inner-shadow-right {
+  background: radial-gradient(50% 50% at 50% 50%, rgb(244.37, 48.15, 34.62) 61.09%, rgba(245.96, 75.48, 36.8, 0.66) 76.79%, rgba(249, 128, 41, 0) 85.01%, rgba(255, 236, 30, 0) 100%);
+  border-radius: 82px;
+  filter: blur(16px);;
+  height: 164px;
+  left: 14px;
+  position: absolute;
+  top: 25px;
+  transform: rotate(-177.49deg);
+  width: 164px;
+}
+
+.yellow-tone {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(236, 69, 48, 0.12) 17.71%, rgba(254, 234, 69, 0.12) 46.88%, rgba(255, 250.7, 188.06, 0.12) 98.63%);
+  border-radius: 82px;
+  height: 164px;
+  left: 14px;
+  position: absolute;
+  top: 25px;
+  transform: rotate(180.00deg);
+  width: 164px;
+}
+
+.light {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 244.66, 208.25, 0) 0%, rgba(254.69, 234.47, 29.71, 0) 84.89%, rgb(255, 252.2, 211.44) 98.96%);
+  border-radius: 82px;
+  height: 164px;
+  left: 0;
+  position: absolute;
+  top: 23px;
+  transform: rotate(180.00deg);
+  width: 164px;
+}
+
+.clear.frame-1 .sun-cloud {
+  cursor: unset;
+  transition: unset;
+}
+
