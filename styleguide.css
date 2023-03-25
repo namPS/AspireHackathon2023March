@@ -1,0 +1,17 @@
+:root { 
+  --big-stone: #1f2b3f;
+  --black: #000000;
+ 
+  --font-size-l: 100px;
+  --font-size-m: 24px;
+ 
+  --font-family-jost: "Jost", Helvetica;
+  --font-family-poppins: "Poppins", Helvetica;
+}
+.jost-bold-big-stone-24px {
+  color: var(--big-stone);
+  font-family: var(--font-family-jost);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}

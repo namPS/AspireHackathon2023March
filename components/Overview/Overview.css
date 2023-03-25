@@ -1,0 +1,47 @@
+.Overview {
+  background-color: rgb(255, 255, 212);
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-bar {
+  padding: 20px;
+}
+
+.menu-items ul  {
+  list-style-type: none;
+}
+
+.menu-items li {
+  padding: 12px;
+}
+
+.driving-score-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.driving-score-container div {
+  width: 50%;
+}
+
+.driving-score-item {
+  padding: 12px;
+}
+
+.driving-score-total-container {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.route-weather-container {
+  display: flex;
+  flex-direction: row;
+}
