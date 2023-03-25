@@ -1,6 +1,7 @@
 import React from "react";
 import "./LandingPage.css";
 import axios from "axios";
+import Desktop1 from '../Desktop1';
 
 function LandingPage(props) {
   const {
@@ -35,7 +36,7 @@ function LandingPage(props) {
   }
 
   console.log("clientId", clientId)
-  console.log("clientData", clientData)
+  console.log("✅ clientData", clientData)
 
   return (
     <div className="container-center-horizontal">
@@ -55,6 +56,27 @@ function LandingPage(props) {
           </button>
         </div>
       </div>
+      {clientData && <Desktop1 />}
+      {/* {clientData &&
+        <Desktop1
+          driverScore={clientData.response.COMPOSITE_DRIVER_SCORE}
+          driverScorePercent={clientData.response.COMPOSITE_DRIVER_SCORE_PERCENTILE}
+          customerId={clientData.response.Customer_ID}
+          driverCourseRecommendation={clientData.response.DRIVER_COURSE_RECOMMENDED}
+          endingLocation={clientData.response.Ending_location}
+          freqOfHardAcceleration={clientData.response.Frequency_of_hard_acceleration}
+          freqOfHardBraking={clientData.response.Frequency_of_hard_braking}
+          freqOfSuddenLaneChange={clientData.response.Frequency_of_sudden_lane_changes}
+          insurancePremiumDiscount={clientData.response.INSURANCE_PREMIUM_DISCOUNT}
+          lastTripDistance={clientData.response.LAST_TRIP_DISTANCE}
+          lastTripTime={clientData.response.LAST_TRIP_TIME}
+          routeTaken={clientData.response.Route_taken}
+          speedingInstance={clientData.response.Speeding_incidents}
+          startingLocation={clientData.response.Starting_location}
+          trafficCondition={clientData.response.Traffic_conditions}
+          weatherBasedRecommendation={clientData.response.WEATHER_BASED_RECOMMENDATION}
+          weatherCondition={clientData.response.Weather_conditions}
+        />} */}
     </div>
   );
 }
