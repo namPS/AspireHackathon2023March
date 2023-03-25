@@ -1,6 +1,7 @@
 import React from "react";
 import "./LandingPage.css";
 import axios from "axios";
+import { useHistory } from "react-router-dom";
 
 function LandingPage(props) {
   const {
@@ -33,6 +34,14 @@ function LandingPage(props) {
     }
 
   }
+
+  const history = useHistory();
+
+  React.useEffect(() => {
+    if (clientData) {
+      history.push("/desktop-1");
+    }
+  }, [clientData])
 
   console.log("clientId", clientId)
   console.log("✅ clientData", clientData)
