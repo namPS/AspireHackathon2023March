@@ -1,0 +1,70 @@
+.classical {
+  align-items: flex-start;
+  background-color: #63635e;
+  border: 1px none;
+  border-radius: 23px;
+  display: flex;
+  min-width: 724px;
+  overflow-x: hidden;
+}
+
+.overlap-group-1 {
+  height: 222px;
+  margin-left: 22px;
+  position: relative;
+  width: 702px;
+}
+
+.you-listened-to-1 {
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 18px;
+}
+
+.view-playlist-1 {
+  left: 35px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 168px;
+}
+
+.title-1 {
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 35px;
+  width: 224px;
+}
+
+.mask-group-1 {
+  height: 222px;
+  left: 153px;
+  position: absolute;
+  top: 0;
+  width: 549px;
+}
+
+.rectangle-42 {
+  border: 3px solid;
+  border-color: var(--cararra);
+  border-radius: 16px;
+  height: 48px;
+  left: 0;
+  position: absolute;
+  top: 157px;
+  transform: rotate(180.00deg);
+  width: 182px;
+}
+
+.classical.hiphop {
+  background-color: #8e95a7;
+}
+
+.classical.hiphop .title-1 {
+  width: 228px;
+}
+

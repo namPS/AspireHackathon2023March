@@ -1,0 +1,58 @@
+.snowy {
+  align-items: flex-start;
+  border: 1px none;
+  display: flex;
+  height: 252px;
+  min-width: 192px;
+  overflow-x: hidden;
+}
+
+.overlap-group-7 {
+  height: 289px;
+  margin-left: -77px;
+  margin-top: -37px;
+  position: relative;
+  width: 293px;
+}
+
+.rectangle-31-1 {
+  background-color: var(--bdazzled-blue);
+  border-radius: 23px;
+  height: 252px;
+  left: 77px;
+  position: absolute;
+  top: 37px;
+  width: 168px;
+}
+
+.surname-1 {
+  left: 102px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 234px;
+}
+
+.text-3 {
+  left: 86px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 173px;
+  width: 125px;
+}
+
+.snow-cloud-1 {
+  cursor: pointer;
+  height: 281px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 1s ease-in-out;
+  width: 293px;
+}
+
+.snow-cloud-1:hover {
+  transform: translate(0, -5px);
+}
+

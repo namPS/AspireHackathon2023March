@@ -1,0 +1,74 @@
+.rainy {
+  align-items: flex-start;
+  border: 1px none;
+  display: flex;
+  height: 252px;
+  min-width: 201px;
+  overflow-x: hidden;
+}
+
+.overlap-group1-3 {
+  height: 306px;
+  margin-left: -94px;
+  margin-top: -48px;
+  position: relative;
+  width: 319px;
+}
+
+.group-169 {
+  display: flex;
+  height: 252px;
+  left: 94px;
+  position: absolute;
+  top: 48px;
+  width: 168px;
+}
+
+.group-167 {
+  align-items: flex-start;
+  display: flex;
+  height: 252px;
+  min-width: 172px;
+}
+
+.overlap-group-6 {
+  align-items: flex-start;
+  background-color: #407585;
+  border-radius: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  min-height: 252px;
+  padding: 31px 9px;
+  width: 168px;
+}
+
+.text-2 {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: 106px;
+  min-height: 26px;
+  width: 125px;
+}
+
+.rainy-1 {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 8px;
+  min-height: 23px;
+}
+
+.rain-cloud {
+  cursor: pointer;
+  height: 306px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 1s ease-in-out;
+  width: 319px;
+}
+
+.rain-cloud:hover {
+  transform: translate(0, -5px);
+}
+

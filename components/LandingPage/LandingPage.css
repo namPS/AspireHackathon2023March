@@ -1,0 +1,135 @@
+.landing-page {
+  align-items: flex-start;
+  background-color: var(--gallery);
+  border: 1px none;
+  display: flex;
+  width: 1528px;
+}
+
+.overlap-group1-6 {
+  background-size: 100% 100%;
+  height: 1024px;
+  position: relative;
+  width: 1528px;
+}
+
+.rectangle-1-1 {
+  height: 993px;
+  left: 42px;
+  position: absolute;
+  top: 31px;
+  width: 1443px;
+}
+
+.title-4 {
+  color: var(--licorice);
+  font-family: var(--font-family-poppins);
+  font-size: 100px;
+  font-weight: 700;
+  left: 532px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 297px;
+  width: 541px;
+}
+
+.overlap-group-12 {
+  align-items: flex-start;
+  background-size: 100% 100%;
+  display: flex;
+  height: 774px;
+  left: 30px;
+  min-width: 1468px;
+  padding: 91px 404px;
+  position: absolute;
+  top: 250px;
+}
+
+.logo-shapes-7-1 {
+  height: 69px;
+  width: 88px;
+}
+
+.rectangle-32 {
+  background-color: var(--banana-mania);
+  border-radius: 23px;
+  height: 105px;
+  left: 409px;
+  position: absolute;
+  top: 548px;
+  width: 708px;
+}
+
+.mesh-08-1 {
+  cursor: pointer;
+  height: 102px;
+  left: 560px;
+  object-fit: cover;
+  position: absolute;
+  top: 691px;
+  transition: all 0.2s ease-in-out;
+  width: 407px;
+}
+
+.mesh-08-1:hover {
+  transform: translate(0, -5px);
+box-shadow: 0px 12px 5px -8px rgba(0,0,0,0.2);
+}
+
+.customer-id {
+  left: 421px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 494px;
+}
+
+.customer-id-1 {
+  background-color: transparent;
+  border: 0;
+  color: var(--big-stone);
+  font-family: var(--font-family-jost-regular);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  height: 35px;
+  left: 421px;
+  letter-spacing: 0;
+  line-height: normal;
+  padding: 0;
+  position: absolute;
+  top: 580px;
+  width: 676px;
+}
+
+.customer-id-1::placeholder {
+  color: #1f2b3f99;
+}
+
+.login {
+  left: 725px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 723px;
+}
+
+
+button, input[type="submit"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.login {
+  left: 725px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 723px;
+}
