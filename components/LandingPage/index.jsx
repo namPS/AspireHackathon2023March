@@ -15,6 +15,7 @@ function LandingPage(props) {
     inputType,
     inputPlaceholder,
     login,
+    setClientInfo
   } = props;
 
   const [clientData, setClientData] = React.useState(null);
@@ -30,6 +31,7 @@ function LandingPage(props) {
       })
         .then((response) => {
           setClientData(response.data);
+          setClientInfo(response.data);
         });
     }
 

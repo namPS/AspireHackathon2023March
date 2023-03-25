@@ -57,7 +57,10 @@ function Desktop1(props) {
     getHeatedSeating,
     availADiscountNow,
     vuesaxboldelement3Props,
+    clientInfo
   } = props;
+
+  console.log("DESKTOP PROPS", clientInfo)
 
   return (
     <div className="container-center-horizontal">

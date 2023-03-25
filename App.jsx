@@ -10,11 +10,13 @@ import Frame1 from "./components/Frame1";
 import LandingPage from "./components/LandingPage";
 
 function App() {
+  const [clientInfo, setClientInfo] = React.useState(null);
+  console.log('🌈 clientInfo', clientInfo)
   return (
     <Router>
       <Switch>
         <Route path="/desktop-1">
-          <Desktop1 {...desktop1Data} />
+          <Desktop1 {...desktop1Data} clientInfo={clientInfo} />
         </Route>
         <Route path="/classical">
           <HipHop
@@ -72,7 +74,7 @@ function App() {
           <Frame1 text1="12°" sunny="Sunny" className="frame-1" />
         </Route>
         <Route path="/:path(|landing-page)">
-          <LandingPage {...landingPageData} />
+          <LandingPage {...landingPageData} setClientInfo={setClientInfo} />
         </Route>
       </Switch>
     </Router>
@@ -135,7 +137,7 @@ const desktop1Data = {
     registerNow: "Register now",
     getHeatedSeating: "Get Heated seating",
     availADiscountNow: "Avail a discount now",
-    vuesaxboldelement3Props: vuesaxboldelement32Data,
+  vuesaxboldelement3Props: vuesaxboldelement32Data
 };
 
 const landingPageData = {
