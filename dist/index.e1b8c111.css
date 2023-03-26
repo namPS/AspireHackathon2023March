@@ -1004,7 +1004,6 @@ button, input[type="submit"] {
   justify-content: flex-end;
   align-self: flex-end;
   align-items: flex-start;
-  gap: 12px;
   padding: 3px 14px;
   display: flex;
 }

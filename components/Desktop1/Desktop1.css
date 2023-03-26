@@ -197,7 +197,7 @@
   align-self: flex-end;
   background-size: 100% 100%;
   display: flex;
-  gap: 12px;
+  /* gap: 12px; */
   height: 993px;
   justify-content: flex-end;
   min-width: 1225px;
