@@ -76,6 +76,10 @@ function Desktop1(props) {
     history.push("/desktop-1");
   }
 
+  const goToStatisticsPage = () => {
+    history.push("/stats");
+  }
+
   return (
     <div className="container-center-horizontal">
       <div className="desktop-1 screen">
@@ -97,7 +101,7 @@ function Desktop1(props) {
             </div>
             <div className="group-174">
               <Vuesaxboldelement3 className={vuesaxboldelement3Props.className} />
-              <div className="statistics poppins-medium-black-16px">{statistics}</div>
+              <div className="statistics poppins-medium-black-16px" onClick={goToStatisticsPage}>{statistics}</div>
             </div>
             <div className="overlap-group6">
               <div className="group-175">
