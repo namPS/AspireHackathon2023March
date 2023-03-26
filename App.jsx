@@ -12,7 +12,8 @@ import Stats from "./components/Stats";
 
 function App() {
   const [clientInfo, setClientInfo] = React.useState(null);
-  console.log('🌈 clientInfo', clientInfo)
+  console.log('clientInfo', clientInfo)
+
   return (
     <Router>
       <Switch>

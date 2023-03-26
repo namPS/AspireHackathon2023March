@@ -6,6 +6,7 @@ import "./Desktop1.css";
 import Rainy from "../Rainy";
 import Snowy from "../Snowy";
 import { useHistory } from "react-router-dom";
+import Frame1 from "../Frame1";
 
 function Desktop1(props) {
   const {
@@ -166,7 +167,7 @@ function Desktop1(props) {
                     <div className="text-1 jost-extra-bold-white-45px">{text1}</div>
                     {clientInfo?.response?.Weather_conditions === 'snowy' && <Snowy surname="Snow Shower" text1="-10°" snowCloud="/img/snow-cloud@2x.png" />}
                     {clientInfo?.response?.Weather_conditions === 'rainy' && <Rainy text1="9°" rainy="Rainy" rainCloud="/img/rain-cloud@2x.png" />}
-                    {clientInfo?.response?.Weather_conditions === 'clear' && <img className="clear" src={clearDay} alt="Clear day" />}
+                    {clientInfo?.response?.Weather_conditions === 'clear' && <Frame1 text1="12°" sunny="Sunny" />}
                   </div>
 
                 </div>
