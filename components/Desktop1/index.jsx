@@ -6,6 +6,7 @@ import "./Desktop1.css";
 import Rainy from "../Rainy";
 import Snowy from "../Snowy";
 import { useHistory } from "react-router-dom";
+// import { HipHop } from '../HipHop';
 
 function Desktop1(props) {
   const {
@@ -133,23 +134,33 @@ function Desktop1(props) {
                   </div>
                   <div className="seat-belt-usage-good poppins-medium-white-15px">
                     <span className="poppins-medium-big-stone-15px">{spanText1}</span>
-                    <span className="poppins-medium-fruit-salad-15px">{spanText2}</span>
+                    {clientInfo?.response?.SEATBELT_RATING === 'GOOD' && <span className="poppins-medium-fruit-salad-15px">{clientInfo?.response?.SEATBELT_RATING}</span>}
+                    {clientInfo?.response?.SEATBELT_RATING === 'MODERATE' && <span className="poppins-medium-tangerine-15px">{clientInfo?.response?.SEATBELT_RATING}</span>}
+                    {clientInfo?.response?.SEATBELT_RATING === 'POOR' && <span className="span1">{clientInfo?.response?.SEATBELT_RATING}</span>}
                   </div>
                   <div className="rapid-breaking-poor poppins-medium-white-15px">
                     <span className="poppins-medium-big-stone-15px">{spanText3}</span>
-                    <span className="span1">{spanText4}</span>
+                    {clientInfo?.response?.HARD_BRAKING_RATING === 'GOOD' && <span className="poppins-medium-fruit-salad-15px">{clientInfo?.response?.HARD_BRAKING_RATING}</span>}
+                    {clientInfo?.response?.HARD_BRAKING_RATING === 'MODERATE' && <span className="poppins-medium-tangerine-15px">{clientInfo?.response?.HARD_BRAKING_RATING}</span>}
+                    {clientInfo?.response?.HARD_BRAKING_RATING === 'POOR' && <span className="span1">{clientInfo?.response?.HARD_BRAKING_RATING}</span>}
                   </div>
                   <div className="rapid-acceleration-moderate poppins-medium-white-15px">
                     <span className="poppins-medium-big-stone-15px">{spanText5}</span>
-                    <span className="poppins-medium-tangerine-15px">{spanText6}</span>
+                    {clientInfo?.response?.ACCELERATION_RATING === 'GOOD' && <span className="poppins-medium-fruit-salad-15px">{clientInfo?.response?.ACCELERATION_RATING}</span>}
+                    {clientInfo?.response?.ACCELERATION_RATING === 'MODERATE' && <span className="poppins-medium-tangerine-15px">{clientInfo?.response?.ACCELERATION_RATING}</span>}
+                    {clientInfo?.response?.ACCELERATION_RATING === 'POOR' && <span className="span1">{clientInfo?.response?.ACCELERATION_RATING}</span>}
                   </div>
                   <div className="unsafe-lane-change-moderate poppins-medium-white-15px">
                     <span className="poppins-medium-big-stone-15px">{spanText7}</span>
-                    <span className="poppins-medium-tangerine-15px">{spanText8}</span>
+                    {clientInfo?.response?.LANE_CHANGE_RATING === 'GOOD' && <span className="poppins-medium-fruit-salad-15px">{clientInfo?.response?.LANE_CHANGE_RATING}</span>}
+                    {clientInfo?.response?.LANE_CHANGE_RATING === 'MODERATE' && <span className="poppins-medium-tangerine-15px">{clientInfo?.response?.LANE_CHANGE_RATING}</span>}
+                    {clientInfo?.response?.LANE_CHANGE_RATING === 'POOR' && <span className="span1">{clientInfo?.response?.LANE_CHANGE_RATING}</span>}
                   </div>
                   <div className="vehicle-maintenance-good poppins-medium-white-15px">
                     <span className="poppins-medium-big-stone-15px">{spanText9}</span>
-                    <span className="poppins-medium-fruit-salad-15px">{spanText10}</span>
+                    {clientInfo?.response?.Vehicle_Maintenance_RATING === 'GOOD' && <span className="poppins-medium-fruit-salad-15px">{clientInfo?.response?.Vehicle_Maintenance_RATING}</span>}
+                    {clientInfo?.response?.Vehicle_Maintenance_RATING === 'MODERATE' && <span className="poppins-medium-tangerine-15px">{clientInfo?.response?.Vehicle_Maintenance_RATING}</span>}
+                    {clientInfo?.response?.Vehicle_Maintenance_RATING === 'POOR' && <span className="span1">{clientInfo?.response?.Vehicle_Maintenance_RATING}</span>}
                   </div>
 
                   <div className="overlap-group3-weather">
@@ -163,8 +174,8 @@ function Desktop1(props) {
 
                 </div>
                 <div className="distance">{distance}: {(clientInfo?.response?.LAST_TRIP_DISTANCE).toFixed(2)} miles</div>
-                <div className="fuel-consumption">{fuelConsumption}: </div>
-                <div className="time-spent">{timeSpent}: {(clientInfo?.response?.LAST_TRIP_TIME).toFixed(2)}</div>
+                <div className="fuel-consumption">{fuelConsumption}: {(clientInfo?.response?.Total_Fuel_consumption).toFixed(2)} </div>
+                <div className="time-spent">{timeSpent} : {(clientInfo?.response?.LAST_TRIP_TIME).toFixed(2)}</div>
                 <div className="traffic-condition">{clientInfo?.response?.Traffic_conditions}</div>
                 <div className="overlap-group10" style={{ backgroundImage: `url(${overlapGroup10})` }}>
                   <div className="rectangle-33"></div>
@@ -172,6 +183,14 @@ function Desktop1(props) {
                 </div>
               </div>
               <div className="overlap-group9">
+                {/* {clientInfo?.response?.GENRE === 'hip-hop' && <HipHop
+                  youListenedTo="You listened to"
+                  viewPlaylist="View Playlist"
+                  title="Hip-Hop"
+                  maskGroup="/img/mask-group.png"
+                  className="hiphop"
+                />} */}
+
                 <div className="rectangle-41"></div>
                 <div className="you-listened-to poppins-medium-cararra-15px">{youListenedTo}</div>
                 <div className="view-playlist poppins-medium-cararra-15px">{viewPlaylist}</div>
@@ -200,7 +219,7 @@ function Desktop1(props) {
                   </div>
                 </div>
               </div>}
-              <div className="group-container-1">
+              {clientInfo?.response?.Weather_conditions === snowCloud && <div className="group-container-1">
                 <div className="group-17-1"></div>
                 <div className="group-17">
                   <div className="overlap-group">
@@ -209,7 +228,7 @@ function Desktop1(props) {
                     <div className="avail-a-discount-now manrope-normal-silver-10px">{availADiscountNow}</div>
                   </div>
                 </div>
-              </div>
+              </div>}
             </div>
           </div>
         </div>

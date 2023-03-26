@@ -102,7 +102,7 @@ const desktop1Data = {
   welcomeBackCustom: "Welcome back, [CustomerID]! Here is your last ride details",
   mesh08: "/img/mesh-08.png",
     yourLastTripToEndingLocation: "Your Last Trip to ‘Ending Location’",
-  betterThan86OfDrivers: "Better than [driverAverage] of drivers",
+  betterThan86OfDrivers: "Better than [driverAverage]% of drivers",
     i: "i",
     spanText1: <React.Fragment>Seat Belt Usage<br /></React.Fragment>,
     spanText2: "Good",
