@@ -111,8 +111,7 @@ function Stats(props) {
             </div>
           </div>
           <div className="overlap-group5" style={{ backgroundImage: `url(${overlapGroup5})` }}>
-
-            <iframe width="1400" height="2500" src="https://lookerstudio.google.com/embed/reporting/48b408fa-c17b-47d9-8bfe-fd07668076ba/page/p_u1lvwfzk4c" allowfullscreen></iframe>
+            <iframe width="760" height="950" src="https://lookerstudio.google.com/embed/reporting/48b408fa-c17b-47d9-8bfe-fd07668076ba/page/p_u1lvwfzk4c" allowfullscreen></iframe>
             <div className="overlap-group8">
               <img className="ellipse-2" src={ellipse2} alt="Ellipse 2" />
               <div className="cust0001 valign-text-middle">{clientInfo?.response?.Customer_ID}</div>
