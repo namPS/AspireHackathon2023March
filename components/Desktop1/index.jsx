@@ -92,7 +92,7 @@ function Desktop1(props) {
               </div>
               <div className="flex-col-2">
                 <div className="road-whiz" onClick={backToOverview}>{roadwhiz}</div>
-                <div className="overview">{overview}</div>
+                <div className="overview" onClick={backToOverview}>{overview}</div>
               </div>
             </div>
             <div className="group-173">
