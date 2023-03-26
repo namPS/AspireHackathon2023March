@@ -71,6 +71,10 @@ function Desktop1(props) {
     setClientInfo(null);
   }
 
+  const backToOverview = () => {
+    history.push("/desktop-1");
+  }
+
   return (
     <div className="container-center-horizontal">
       <div className="desktop-1 screen">
@@ -82,7 +86,7 @@ function Desktop1(props) {
                 <Vuesaxboldelement3 />
               </div>
               <div className="flex-col-2">
-                <div className="road-whiz">{roadwhiz}</div>
+                <div className="road-whiz" onClick={backToOverview}>{roadwhiz}</div>
                 <div className="overview">{overview}</div>
               </div>
             </div>
@@ -148,7 +152,7 @@ function Desktop1(props) {
                     <span className="poppins-medium-fruit-salad-15px">{spanText10}</span>
                   </div>
 
-                  <div className="overlap-group3">
+                  <div className="overlap-group3-weather">
                     <div className="rectangle-31"></div>
                     <div className="surname poppins-medium-cararra-15px">{surname}</div>
                     <div className="text-1 jost-extra-bold-white-45px">{text1}</div>
