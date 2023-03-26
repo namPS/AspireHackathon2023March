@@ -9135,6 +9135,12 @@ function Desktop1(props) {
     const goToStatisticsPage = ()=>{
         history.push("/stats");
     };
+    const goToCoursesPage = ()=>{
+        history.push("/courses");
+    };
+    const goToStorePage = ()=>{
+        history.push("/store");
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "container-center-horizontal",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9160,18 +9166,18 @@ function Desktop1(props) {
                                                 alt: "Logo Shapes 7"
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 85,
+                                                lineNumber: 92,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _vuesaxboldelement3Default.default), {}, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 86,
+                                                lineNumber: 93,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 84,
+                                        lineNumber: 91,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9183,7 +9189,7 @@ function Desktop1(props) {
                                                 children: roadwhiz
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 89,
+                                                lineNumber: 96,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9192,19 +9198,19 @@ function Desktop1(props) {
                                                 children: overview
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 90,
+                                                lineNumber: 97,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 88,
+                                        lineNumber: 95,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Desktop1/index.jsx",
-                                lineNumber: 83,
+                                lineNumber: 90,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9216,21 +9222,22 @@ function Desktop1(props) {
                                         alt: "Group"
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 94,
+                                        lineNumber: 101,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "store",
+                                        onClick: goToStorePage,
                                         children: store
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 95,
+                                        lineNumber: 102,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Desktop1/index.jsx",
-                                lineNumber: 93,
+                                lineNumber: 100,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9240,7 +9247,7 @@ function Desktop1(props) {
                                         className: vuesaxboldelement3Props.className
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 98,
+                                        lineNumber: 105,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9249,13 +9256,13 @@ function Desktop1(props) {
                                         children: statistics
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 99,
+                                        lineNumber: 106,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Desktop1/index.jsx",
-                                lineNumber: 97,
+                                lineNumber: 104,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9270,21 +9277,22 @@ function Desktop1(props) {
                                                 alt: "icon-folder"
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 103,
+                                                lineNumber: 110,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                 className: "courses poppins-medium-black-16px",
+                                                onClick: goToCoursesPage,
                                                 children: courses
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 104,
+                                                lineNumber: 111,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 102,
+                                        lineNumber: 109,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9292,13 +9300,13 @@ function Desktop1(props) {
                                         children: text
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 106,
+                                        lineNumber: 113,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Desktop1/index.jsx",
-                                lineNumber: 101,
+                                lineNumber: 108,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9306,7 +9314,7 @@ function Desktop1(props) {
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _vuesaxlinearloginDefault.default), {}, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 109,
+                                        lineNumber: 116,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9315,19 +9323,19 @@ function Desktop1(props) {
                                         children: "log Out"
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 110,
+                                        lineNumber: 117,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Desktop1/index.jsx",
-                                lineNumber: 108,
+                                lineNumber: 115,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "components/Desktop1/index.jsx",
-                        lineNumber: 82,
+                        lineNumber: 89,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9344,7 +9352,7 @@ function Desktop1(props) {
                                         children: title
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 115,
+                                        lineNumber: 122,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -9352,7 +9360,7 @@ function Desktop1(props) {
                                         children: welcomeBackCustom.replace("[CustomerID]", clientInfo?.response.Customer_ID)
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 116,
+                                        lineNumber: 123,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9367,7 +9375,7 @@ function Desktop1(props) {
                                                         alt: "Mesh-08"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 119,
+                                                        lineNumber: 126,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9378,7 +9386,7 @@ function Desktop1(props) {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 120,
+                                                        lineNumber: 127,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -9386,7 +9394,7 @@ function Desktop1(props) {
                                                         children: clientInfo?.response.yourLastTripToEndingLocation
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 121,
+                                                        lineNumber: 128,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -9394,42 +9402,42 @@ function Desktop1(props) {
                                                         children: betterThan86OfDrivers.replace("[driverAverage]", clientInfo?.response?.COMPOSITE_DRIVER_SCORE_PERCENTILE)
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 124,
+                                                        lineNumber: 131,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "rectangle-34"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 125,
+                                                        lineNumber: 132,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "rectangle-38"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 126,
+                                                        lineNumber: 133,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "rectangle-35"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 127,
+                                                        lineNumber: 134,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "rectangle-39"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 128,
+                                                        lineNumber: 135,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "rectangle-36"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 129,
+                                                        lineNumber: 136,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9440,20 +9448,20 @@ function Desktop1(props) {
                                                                 children: i
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 131,
+                                                                lineNumber: 138,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                                 className: "ellipse-44"
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 132,
+                                                                lineNumber: 139,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 130,
+                                                        lineNumber: 137,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9464,7 +9472,7 @@ function Desktop1(props) {
                                                                 children: spanText1
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 135,
+                                                                lineNumber: 142,
                                                                 columnNumber: 21
                                                             }, this),
                                                             clientInfo?.response?.SEATBELT_RATING === "GOOD" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -9472,7 +9480,7 @@ function Desktop1(props) {
                                                                 children: clientInfo?.response?.SEATBELT_RATING
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 136,
+                                                                lineNumber: 143,
                                                                 columnNumber: 74
                                                             }, this),
                                                             clientInfo?.response?.SEATBELT_RATING === "MODERATE" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -9480,7 +9488,7 @@ function Desktop1(props) {
                                                                 children: clientInfo?.response?.SEATBELT_RATING
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 137,
+                                                                lineNumber: 144,
                                                                 columnNumber: 78
                                                             }, this),
                                                             clientInfo?.response?.SEATBELT_RATING === "POOR" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -9488,13 +9496,13 @@ function Desktop1(props) {
                                                                 children: clientInfo?.response?.SEATBELT_RATING
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 138,
+                                                                lineNumber: 145,
                                                                 columnNumber: 74
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 134,
+                                                        lineNumber: 141,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9505,7 +9513,7 @@ function Desktop1(props) {
                                                                 children: spanText3
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 141,
+                                                                lineNumber: 148,
                                                                 columnNumber: 21
                                                             }, this),
                                                             clientInfo?.response?.HARD_BRAKING_RATING === "GOOD" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -9513,7 +9521,7 @@ function Desktop1(props) {
                                                                 children: clientInfo?.response?.HARD_BRAKING_RATING
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 142,
+                                                                lineNumber: 149,
                                                                 columnNumber: 78
                                                             }, this),
                                                             clientInfo?.response?.HARD_BRAKING_RATING === "MODERATE" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -9521,7 +9529,7 @@ function Desktop1(props) {
                                                                 children: clientInfo?.response?.HARD_BRAKING_RATING
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 143,
+                                                                lineNumber: 150,
                                                                 columnNumber: 82
                                                             }, this),
                                                             clientInfo?.response?.HARD_BRAKING_RATING === "POOR" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -9529,13 +9537,13 @@ function Desktop1(props) {
                                                                 children: clientInfo?.response?.HARD_BRAKING_RATING
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 144,
+                                                                lineNumber: 151,
                                                                 columnNumber: 78
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 140,
+                                                        lineNumber: 147,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9546,7 +9554,7 @@ function Desktop1(props) {
                                                                 children: spanText5
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 147,
+                                                                lineNumber: 154,
                                                                 columnNumber: 21
                                                             }, this),
                                                             clientInfo?.response?.ACCELERATION_RATING === "GOOD" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -9554,7 +9562,7 @@ function Desktop1(props) {
                                                                 children: clientInfo?.response?.ACCELERATION_RATING
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 148,
+                                                                lineNumber: 155,
                                                                 columnNumber: 78
                                                             }, this),
                                                             clientInfo?.response?.ACCELERATION_RATING === "MODERATE" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -9562,7 +9570,7 @@ function Desktop1(props) {
                                                                 children: clientInfo?.response?.ACCELERATION_RATING
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 149,
+                                                                lineNumber: 156,
                                                                 columnNumber: 82
                                                             }, this),
                                                             clientInfo?.response?.ACCELERATION_RATING === "POOR" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -9570,13 +9578,13 @@ function Desktop1(props) {
                                                                 children: clientInfo?.response?.ACCELERATION_RATING
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 150,
+                                                                lineNumber: 157,
                                                                 columnNumber: 78
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 146,
+                                                        lineNumber: 153,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9587,7 +9595,7 @@ function Desktop1(props) {
                                                                 children: spanText7
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 153,
+                                                                lineNumber: 160,
                                                                 columnNumber: 21
                                                             }, this),
                                                             clientInfo?.response?.LANE_CHANGE_RATING === "GOOD" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -9595,7 +9603,7 @@ function Desktop1(props) {
                                                                 children: clientInfo?.response?.LANE_CHANGE_RATING
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 154,
+                                                                lineNumber: 161,
                                                                 columnNumber: 77
                                                             }, this),
                                                             clientInfo?.response?.LANE_CHANGE_RATING === "MODERATE" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -9603,7 +9611,7 @@ function Desktop1(props) {
                                                                 children: clientInfo?.response?.LANE_CHANGE_RATING
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 155,
+                                                                lineNumber: 162,
                                                                 columnNumber: 81
                                                             }, this),
                                                             clientInfo?.response?.LANE_CHANGE_RATING === "POOR" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -9611,13 +9619,13 @@ function Desktop1(props) {
                                                                 children: clientInfo?.response?.LANE_CHANGE_RATING
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 156,
+                                                                lineNumber: 163,
                                                                 columnNumber: 77
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 152,
+                                                        lineNumber: 159,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9628,7 +9636,7 @@ function Desktop1(props) {
                                                                 children: spanText9
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 159,
+                                                                lineNumber: 166,
                                                                 columnNumber: 21
                                                             }, this),
                                                             clientInfo?.response?.Vehicle_Maintenance_RATING === "GOOD" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -9636,7 +9644,7 @@ function Desktop1(props) {
                                                                 children: clientInfo?.response?.Vehicle_Maintenance_RATING
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 160,
+                                                                lineNumber: 167,
                                                                 columnNumber: 85
                                                             }, this),
                                                             clientInfo?.response?.Vehicle_Maintenance_RATING === "MODERATE" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -9644,7 +9652,7 @@ function Desktop1(props) {
                                                                 children: clientInfo?.response?.Vehicle_Maintenance_RATING
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 161,
+                                                                lineNumber: 168,
                                                                 columnNumber: 89
                                                             }, this),
                                                             clientInfo?.response?.Vehicle_Maintenance_RATING === "POOR" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -9652,13 +9660,13 @@ function Desktop1(props) {
                                                                 children: clientInfo?.response?.Vehicle_Maintenance_RATING
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 162,
+                                                                lineNumber: 169,
                                                                 columnNumber: 85
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 158,
+                                                        lineNumber: 165,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9669,7 +9677,7 @@ function Desktop1(props) {
                                                                 children: surname
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 166,
+                                                                lineNumber: 173,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9677,7 +9685,7 @@ function Desktop1(props) {
                                                                 children: text1
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 167,
+                                                                lineNumber: 174,
                                                                 columnNumber: 21
                                                             }, this),
                                                             clientInfo?.response?.Weather_conditions === "snowy" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _snowyDefault.default), {
@@ -9686,7 +9694,7 @@ function Desktop1(props) {
                                                                 snowCloud: "/img/snow-cloud@2x.png"
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 168,
+                                                                lineNumber: 175,
                                                                 columnNumber: 78
                                                             }, this),
                                                             clientInfo?.response?.Weather_conditions === "rainy" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _rainyDefault.default), {
@@ -9695,7 +9703,7 @@ function Desktop1(props) {
                                                                 rainCloud: "/img/rain-cloud@2x.png"
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 169,
+                                                                lineNumber: 176,
                                                                 columnNumber: 78
                                                             }, this),
                                                             clientInfo?.response?.Weather_conditions === "clear" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _frame1Default.default), {
@@ -9703,19 +9711,19 @@ function Desktop1(props) {
                                                                 sunny: "Sunny"
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 170,
+                                                                lineNumber: 177,
                                                                 columnNumber: 78
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 165,
+                                                        lineNumber: 172,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 118,
+                                                lineNumber: 125,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9728,7 +9736,7 @@ function Desktop1(props) {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 174,
+                                                lineNumber: 181,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9741,7 +9749,7 @@ function Desktop1(props) {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 175,
+                                                lineNumber: 182,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9753,7 +9761,7 @@ function Desktop1(props) {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 176,
+                                                lineNumber: 183,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9761,7 +9769,7 @@ function Desktop1(props) {
                                                 children: clientInfo?.response?.Traffic_conditions
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 177,
+                                                lineNumber: 184,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9774,7 +9782,7 @@ function Desktop1(props) {
                                                         className: "rectangle-33"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 179,
+                                                        lineNumber: 186,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9782,19 +9790,19 @@ function Desktop1(props) {
                                                         children: routeTaken
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 180,
+                                                        lineNumber: 187,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 178,
+                                                lineNumber: 185,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 117,
+                                        lineNumber: 124,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9804,7 +9812,7 @@ function Desktop1(props) {
                                                 className: "rectangle-41"
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 184,
+                                                lineNumber: 191,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9812,7 +9820,7 @@ function Desktop1(props) {
                                                 children: youListenedTo
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 185,
+                                                lineNumber: 192,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9820,7 +9828,7 @@ function Desktop1(props) {
                                                 children: viewPlaylist
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 186,
+                                                lineNumber: 193,
                                                 columnNumber: 17
                                             }, this),
                                             clientInfo?.response?.GENRE === "hip-hop" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -9830,7 +9838,7 @@ function Desktop1(props) {
                                                         children: "Hip Hop"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 187,
+                                                        lineNumber: 194,
                                                         columnNumber: 66
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -9839,14 +9847,14 @@ function Desktop1(props) {
                                                         alt: "Mask group"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 188,
+                                                        lineNumber: 195,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "rectangle-40"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 189,
+                                                        lineNumber: 196,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
@@ -9858,7 +9866,7 @@ function Desktop1(props) {
                                                         children: "POP"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 190,
+                                                        lineNumber: 197,
                                                         columnNumber: 62
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -9867,14 +9875,14 @@ function Desktop1(props) {
                                                         alt: "Mask group"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 191,
+                                                        lineNumber: 198,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "rectangle-40"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 192,
+                                                        lineNumber: 199,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
@@ -9886,7 +9894,7 @@ function Desktop1(props) {
                                                         children: "ROCK"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 193,
+                                                        lineNumber: 200,
                                                         columnNumber: 63
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -9895,14 +9903,14 @@ function Desktop1(props) {
                                                         alt: "Mask group"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 194,
+                                                        lineNumber: 201,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "rectangle-40"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 195,
+                                                        lineNumber: 202,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
@@ -9914,7 +9922,7 @@ function Desktop1(props) {
                                                         children: "JAZZ"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 196,
+                                                        lineNumber: 203,
                                                         columnNumber: 63
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -9923,14 +9931,14 @@ function Desktop1(props) {
                                                         alt: "Mask group"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 197,
+                                                        lineNumber: 204,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "rectangle-40"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 198,
+                                                        lineNumber: 205,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
@@ -9942,7 +9950,7 @@ function Desktop1(props) {
                                                         children: "CLASSICAL"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 199,
+                                                        lineNumber: 206,
                                                         columnNumber: 68
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -9951,14 +9959,14 @@ function Desktop1(props) {
                                                         alt: "Mask group"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 200,
+                                                        lineNumber: 207,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "rectangle-40"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 201,
+                                                        lineNumber: 208,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
@@ -9966,13 +9974,13 @@ function Desktop1(props) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 183,
+                                        lineNumber: 190,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Desktop1/index.jsx",
-                                lineNumber: 114,
+                                lineNumber: 121,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9984,7 +9992,7 @@ function Desktop1(props) {
                                         alt: "Ellipse 2"
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 205,
+                                        lineNumber: 212,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9992,7 +10000,7 @@ function Desktop1(props) {
                                         children: clientInfo?.response?.Customer_ID
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 206,
+                                        lineNumber: 213,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -10001,7 +10009,7 @@ function Desktop1(props) {
                                         alt: "Line 1"
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 207,
+                                        lineNumber: 214,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -10012,25 +10020,25 @@ function Desktop1(props) {
                                                 children: recommendations
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 209,
+                                                lineNumber: 216,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                 className: "notif",
                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _vuesaxlinearnotificationDefault.default), {}, void 0, false, {
                                                     fileName: "components/Desktop1/index.jsx",
-                                                    lineNumber: 211,
+                                                    lineNumber: 218,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 210,
+                                                lineNumber: 217,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 208,
+                                        lineNumber: 215,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -10040,7 +10048,7 @@ function Desktop1(props) {
                                                 className: "group-15"
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 215,
+                                                lineNumber: 222,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -10052,7 +10060,7 @@ function Desktop1(props) {
                                                             className: "rectangle-1"
                                                         }, void 0, false, {
                                                             fileName: "components/Desktop1/index.jsx",
-                                                            lineNumber: 218,
+                                                            lineNumber: 225,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -10060,7 +10068,7 @@ function Desktop1(props) {
                                                             children: insurancePercent.replace("[insurancePercent]", "10%")
                                                         }, void 0, false, {
                                                             fileName: "components/Desktop1/index.jsx",
-                                                            lineNumber: 219,
+                                                            lineNumber: 226,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -10068,24 +10076,24 @@ function Desktop1(props) {
                                                             children: registerNow
                                                         }, void 0, false, {
                                                             fileName: "components/Desktop1/index.jsx",
-                                                            lineNumber: 220,
+                                                            lineNumber: 227,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "components/Desktop1/index.jsx",
-                                                    lineNumber: 217,
+                                                    lineNumber: 224,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 216,
+                                                lineNumber: 223,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 214,
+                                        lineNumber: 221,
                                         columnNumber: 15
                                     }, this),
                                     clientInfo?.response?.INSURANCE_PREMIUM_DISCOUNT && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -10095,7 +10103,7 @@ function Desktop1(props) {
                                                 className: "group-15"
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 225,
+                                                lineNumber: 232,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -10107,7 +10115,7 @@ function Desktop1(props) {
                                                             className: "rectangle-1"
                                                         }, void 0, false, {
                                                             fileName: "components/Desktop1/index.jsx",
-                                                            lineNumber: 228,
+                                                            lineNumber: 235,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -10115,7 +10123,7 @@ function Desktop1(props) {
                                                             children: insurancePercent.replace("[insurancePercent]", clientInfo?.response?.INSURANCE_PREMIUM_DISCOUNT)
                                                         }, void 0, false, {
                                                             fileName: "components/Desktop1/index.jsx",
-                                                            lineNumber: 229,
+                                                            lineNumber: 236,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -10123,24 +10131,24 @@ function Desktop1(props) {
                                                             children: registerNow
                                                         }, void 0, false, {
                                                             fileName: "components/Desktop1/index.jsx",
-                                                            lineNumber: 230,
+                                                            lineNumber: 237,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "components/Desktop1/index.jsx",
-                                                    lineNumber: 227,
+                                                    lineNumber: 234,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 226,
+                                                lineNumber: 233,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 224,
+                                        lineNumber: 231,
                                         columnNumber: 68
                                     }, this),
                                     clientInfo?.response?.Weather_conditions === "snowy" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -10150,7 +10158,7 @@ function Desktop1(props) {
                                                 className: "group-17-1"
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 235,
+                                                lineNumber: 242,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -10162,7 +10170,7 @@ function Desktop1(props) {
                                                             className: "rectangle-1"
                                                         }, void 0, false, {
                                                             fileName: "components/Desktop1/index.jsx",
-                                                            lineNumber: 238,
+                                                            lineNumber: 245,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -10170,7 +10178,7 @@ function Desktop1(props) {
                                                             children: getHeatedSeating
                                                         }, void 0, false, {
                                                             fileName: "components/Desktop1/index.jsx",
-                                                            lineNumber: 239,
+                                                            lineNumber: 246,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -10178,52 +10186,52 @@ function Desktop1(props) {
                                                             children: availADiscountNow
                                                         }, void 0, false, {
                                                             fileName: "components/Desktop1/index.jsx",
-                                                            lineNumber: 240,
+                                                            lineNumber: 247,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "components/Desktop1/index.jsx",
-                                                    lineNumber: 237,
+                                                    lineNumber: 244,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 236,
+                                                lineNumber: 243,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 234,
+                                        lineNumber: 241,
                                         columnNumber: 72
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Desktop1/index.jsx",
-                                lineNumber: 204,
+                                lineNumber: 211,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "components/Desktop1/index.jsx",
-                        lineNumber: 113,
+                        lineNumber: 120,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/Desktop1/index.jsx",
-                lineNumber: 81,
+                lineNumber: 88,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "components/Desktop1/index.jsx",
-            lineNumber: 80,
+            lineNumber: 87,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "components/Desktop1/index.jsx",
-        lineNumber: 79,
+        lineNumber: 86,
         columnNumber: 5
     }, this);
 }

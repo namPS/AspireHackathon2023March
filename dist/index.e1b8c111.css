@@ -263,9 +263,9 @@ input:focus {
 }
 
 .overlap-group-courses {
-  background-color: var(--tahuna-sands);
   height: 43px;
   min-width: 92px;
+  background-color: #f2ebc8;
   border-radius: 15px;
   align-items: center;
   margin-top: 4px;
@@ -310,9 +310,9 @@ input:focus {
 }
 
 .overlap-group-2-courses {
-  background-color: var(--tahuna-sands);
   height: 43px;
   min-width: 92px;
+  background-color: #f2ebc8;
   border-radius: 15px;
   align-self: flex-start;
   align-items: center;

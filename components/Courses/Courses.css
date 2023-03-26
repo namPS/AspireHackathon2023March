@@ -233,7 +233,7 @@
 
 .overlap-group-courses {
   align-items: center;
-  background-color: var(--tahuna-sands);
+  background-color: #f2ebc8;
   border-radius: 15px;
   display: flex;
   height: 43px;
@@ -281,7 +281,7 @@
 .overlap-group-2-courses {
   align-items: center;
   align-self: flex-start;
-  background-color: var(--tahuna-sands);
+  background-color: #f2ebc8;
   border-radius: 15px;
   display: flex;
   height: 43px;
