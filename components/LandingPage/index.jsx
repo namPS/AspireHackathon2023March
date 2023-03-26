@@ -26,7 +26,7 @@ function LandingPage(props) {
   const fetchClientData = () => {
     if (clientId) {
       axios.post(baseURL, {
-        // "Customer_ID": "000006"
+        // Example "Customer_ID": "000006"
         "Customer_ID": clientId
       })
         .then((response) => {
@@ -44,9 +44,6 @@ function LandingPage(props) {
       history.push("/desktop-1");
     }
   }, [clientData])
-
-  console.log("clientId", clientId)
-  console.log("✅ clientData", clientData)
 
   return (
     <div className="container-center-horizontal">

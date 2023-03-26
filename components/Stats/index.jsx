@@ -132,7 +132,7 @@ function Stats(props) {
                   </div>
                 </div>
               </div>}
-              {clientInfo?.response?.Weather_conditions === snowCloud && <div className="group-container-1">
+              {clientInfo?.response?.Weather_conditions === 'snowy' && <div className="group-container-1">
                 <div className="group-17-1"></div>
                 <div className="group-17">
                   <div className="overlap-group">

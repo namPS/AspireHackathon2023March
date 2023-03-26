@@ -12,7 +12,7 @@ function Rainy(props) {
             <div className="group-167">
               <div className="overlap-group-rainy">
                 <div className="text-1-rainy">{text1}</div>
-                <div className="rainy-1">{rainy}</div>
+                <div className="rainy-1 poppins-medium-cararra-15px">{rainy}</div>
               </div>
             </div>
           </div>

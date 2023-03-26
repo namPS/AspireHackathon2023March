@@ -2,15 +2,15 @@
   align-items: flex-start;
   border: 1px none;
   display: flex;
-  height: 252px;
+  /* height: 280px; */
   min-width: 201px;
   overflow-x: hidden;
 }
 
 .overlap-group1-rainy {
-  height: 306px;
+  height: 340px;
   margin-left: -94px;
-  margin-top: -48px;
+  top: -48px;
   position: relative;
   width: 319px;
 }
