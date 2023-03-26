@@ -9,6 +9,7 @@ import Snowy from "./components/Snowy";
 import Frame1 from "./components/Frame1";
 import LandingPage from "./components/LandingPage";
 import Stats from "./components/Stats";
+import Courses from "./components/Courses";
 
 function App() {
   const [clientInfo, setClientInfo] = React.useState(null);
@@ -81,6 +82,9 @@ function App() {
         <Route path="/:path(|landing-page)">
           <LandingPage {...landingPageData} setClientInfo={setClientInfo} />
         </Route>
+        <Route path="/courses">
+          <Courses {...coursesData} />
+        </Route>
       </Switch>
     </Router>
   );
@@ -89,6 +93,35 @@ function App() {
 export default App;
 const vuesaxboldelement32Data = {
     className: "vuesaxlinearchart",
+};
+
+const coursesData = {
+  overlapGroup4: "/img/vector-3.png",
+  logoShapes7: "/img/logo-shapes-7@2x.png",
+  roadwhiz: "RoadWhiz",
+  vuesaxBoldElement3: "/img/vuesax-bold-element-3@2x.png",
+  overview: "Overview",
+  group: "/img/group@2x.png",
+  store: "Store",
+  iconBar_Chart: "/img/vuesax-linear-chart@2x.png",
+  statistics: "Statistics",
+  iconFolder: "/img/vuesax-linear-folder-2-2@2x.png",
+  courses: "Courses",
+  text: "",
+  vuesaxLinearLogin: "/img/vuesax-linear-login@2x.png",
+  logOut: "Log out",
+  overlapGroup5: "/img/rectangle-1.png",
+  title: "Courses",
+  coursesToHelpYou: "Courses to help you better your score for amazing deals and discounts on your vehicle insurance.",
+  image51: "/img/image-5-2@2x.png",
+  trafficLawsRecap: "Traffic Laws recap",
+  enroll1: "Enroll",
+  image52: "/img/image-5-3@2x.png",
+  stayingFocusedSimulation: "Staying Focused: Simulation",
+  enroll2: "Enroll",
+  image53: "/img/image-5-4@2x.png",
+  takingCarOfYourCar: "Taking car of your car",
+  enroll3: "Enroll",
 };
 
 const desktop1Data = {

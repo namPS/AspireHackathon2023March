@@ -33,6 +33,307 @@ input:focus {
   box-sizing: border-box;
 }
 
+.desktop-2 {
+  width: 1528px;
+  background-color: #efefef;
+  border: 1px;
+  align-items: flex-start;
+  display: flex;
+}
+
+.flex-col {
+  min-height: 851px;
+  width: 201px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 33px;
+  display: flex;
+}
+
+.logo-shapes-7 {
+  height: 32px;
+  width: 39px;
+}
+
+.road-whiz {
+  color: #121212;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xl);
+  letter-spacing: 0;
+  min-height: 38px;
+  min-width: 130px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.group-2285 {
+  cursor: pointer;
+  width: 123px;
+  gap: 22px;
+  margin-top: 107px;
+  margin-left: 2px;
+  transition: all .2s;
+  display: flex;
+}
+
+.group-2285:hover, .group-2284:hover, .group-2283:hover {
+  box-shadow: 0 0 10px 2px #0003;
+}
+
+.vuesaxboldelement-3, .icon-bar_chart {
+  height: 24px;
+  width: 24px;
+}
+
+.overview {
+  height: 24px;
+  letter-spacing: 0;
+  width: 75px;
+  line-height: normal;
+}
+
+.group-2284 {
+  cursor: pointer;
+  height: 27px;
+  width: 92px;
+  gap: 23.1px;
+  margin-top: 52px;
+  transition: all .2s;
+  display: flex;
+}
+
+.group {
+  height: 23px;
+  width: 24.92px;
+}
+
+.store {
+  height: 24px;
+  letter-spacing: 0;
+  width: 42px;
+  margin-top: 3px;
+  line-height: normal;
+}
+
+.group-2283 {
+  cursor: pointer;
+  width: 122px;
+  gap: 22px;
+  margin-top: 54px;
+  margin-left: 2px;
+  transition: all .2s;
+  display: flex;
+}
+
+.statistics {
+  height: 24px;
+  letter-spacing: 0;
+  width: 74px;
+  line-height: normal;
+}
+
+.flex-row-courses {
+  height: 48px;
+  min-width: 113px;
+  align-items: flex-start;
+  gap: 22px;
+  margin-top: 46px;
+  margin-left: 2px;
+  display: flex;
+}
+
+.icon-folder {
+  height: 24px;
+  width: 24px;
+  margin-top: 1px;
+}
+
+.flex-col-1-courses {
+  min-height: 48px;
+  width: 67px;
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+}
+
+.courses {
+  color: #3c652f;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-l);
+  letter-spacing: 0;
+  min-height: 24px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.text {
+  letter-spacing: 0;
+  min-height: 24px;
+  line-height: normal;
+}
+
+.flex-row-1-courses {
+  min-width: 105px;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 400px;
+  margin-left: 22px;
+  display: flex;
+}
+
+.vuesaxlinearlogin {
+  height: 31px;
+  width: 31px;
+}
+
+.log-out {
+  letter-spacing: 0;
+  min-height: 24px;
+  margin-top: 1px;
+  line-height: normal;
+}
+
+.overlap-group5-courses {
+  min-height: 993px;
+  width: 1225px;
+  background-size: 100% 100%;
+  flex-direction: column;
+  align-self: flex-end;
+  align-items: flex-start;
+  padding: 31px 52px;
+  display: flex;
+}
+
+.title {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxl);
+  letter-spacing: 0;
+  min-height: 72px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.courses-to-help-you {
+  color: #979ca5;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  letter-spacing: 0;
+  min-height: 23px;
+  margin-top: 1px;
+  margin-left: 1px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.overlap-group-container {
+  height: 257px;
+  min-width: 1042px;
+  align-items: flex-start;
+  margin-top: 76px;
+  margin-left: 1px;
+  display: flex;
+}
+
+.overlap-group-1-courses {
+  background-color: var(--white);
+  min-height: 257px;
+  width: 305px;
+  border-radius: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px 0;
+  display: flex;
+}
+
+.image-5 {
+  height: 120px;
+  object-fit: cover;
+  width: 259px;
+  align-self: center;
+  margin-top: 15px;
+}
+
+.traffic-laws-recap, .taking-car-of-your-car {
+  letter-spacing: 0;
+  min-height: 23px;
+  margin-top: 22px;
+  margin-left: 23px;
+  line-height: normal;
+}
+
+.overlap-group-courses {
+  background-color: var(--tahuna-sands);
+  height: 43px;
+  min-width: 92px;
+  border-radius: 15px;
+  align-items: center;
+  margin-top: 4px;
+  margin-left: 23px;
+  padding: 0 25px;
+  display: flex;
+}
+
+.enroll {
+  letter-spacing: 0;
+  min-height: 23px;
+  min-width: 41px;
+  line-height: normal;
+}
+
+.overlap-group2-courses {
+  background-color: var(--white);
+  min-height: 257px;
+  width: 305px;
+  border-radius: 15px;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 63px;
+  padding: 15px 0;
+  display: flex;
+}
+
+.image-5-1 {
+  height: 120px;
+  object-fit: cover;
+  width: 259px;
+  margin-top: 15px;
+}
+
+.staying-focused-simulation {
+  letter-spacing: 0;
+  min-height: 23px;
+  min-width: 214px;
+  margin-top: 22px;
+  margin-right: 45px;
+  line-height: normal;
+}
+
+.overlap-group-2-courses {
+  background-color: var(--tahuna-sands);
+  height: 43px;
+  min-width: 92px;
+  border-radius: 15px;
+  align-self: flex-start;
+  align-items: center;
+  margin-top: 4px;
+  margin-left: 23px;
+  padding: 0 25px;
+  display: flex;
+}
+
+.overlap-group3-courses {
+  background-color: var(--white);
+  min-height: 257px;
+  width: 305px;
+  border-radius: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 64px;
+  padding: 15px 0;
+  display: flex;
+}
+
 .stats {
   width: 1528px;
   background-color: #efefef;

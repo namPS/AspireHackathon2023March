@@ -5655,6 +5655,8 @@ var _landingPage = require("./components/LandingPage");
 var _landingPageDefault = parcelHelpers.interopDefault(_landingPage);
 var _stats = require("./components/Stats");
 var _statsDefault = parcelHelpers.interopDefault(_stats);
+var _courses = require("./components/Courses");
+var _coursesDefault = parcelHelpers.interopDefault(_courses);
 var _s = $RefreshSig$();
 function App() {
     _s();
@@ -5671,12 +5673,12 @@ function App() {
                         setClientInfo: setClientInfo
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 21,
+                        lineNumber: 22,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 20,
+                    lineNumber: 21,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5688,12 +5690,12 @@ function App() {
                         maskGroup: "/img/mask-group-4.png"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 24,
+                        lineNumber: 25,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 23,
+                    lineNumber: 24,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5705,12 +5707,12 @@ function App() {
                         maskGroup: "/img/mask-group.png"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 32,
+                        lineNumber: 33,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 31,
+                    lineNumber: 32,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5723,12 +5725,12 @@ function App() {
                         className: "jazz"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 40,
+                        lineNumber: 41,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 39,
+                    lineNumber: 40,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5741,12 +5743,12 @@ function App() {
                         className: "rock"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 49,
+                        lineNumber: 50,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 48,
+                    lineNumber: 49,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5759,12 +5761,12 @@ function App() {
                         className: "hiphop"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 58,
+                        lineNumber: 59,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 57,
+                    lineNumber: 58,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5775,12 +5777,12 @@ function App() {
                         rainCloud: "/img/rain-cloud@2x.png"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 67,
+                        lineNumber: 68,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 66,
+                    lineNumber: 67,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5791,12 +5793,12 @@ function App() {
                         snowCloud: "/img/snow-cloud@2x.png"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 70,
+                        lineNumber: 71,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 69,
+                    lineNumber: 70,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5806,12 +5808,12 @@ function App() {
                         sunny: "Sunny"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 73,
+                        lineNumber: 74,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 72,
+                    lineNumber: 73,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5822,12 +5824,12 @@ function App() {
                         className: "frame-1"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 76,
+                        lineNumber: 77,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 75,
+                    lineNumber: 76,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5836,12 +5838,12 @@ function App() {
                         ...desktop1Data
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 79,
+                        lineNumber: 80,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 78,
+                    lineNumber: 79,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5851,23 +5853,37 @@ function App() {
                         setClientInfo: setClientInfo
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 82,
+                        lineNumber: 83,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 81,
+                    lineNumber: 82,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/courses",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _coursesDefault.default), {
+                        ...coursesData
+                    }, void 0, false, {
+                        fileName: "App.jsx",
+                        lineNumber: 86,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "App.jsx",
+                    lineNumber: 85,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "App.jsx",
-            lineNumber: 19,
+            lineNumber: 20,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "App.jsx",
-        lineNumber: 18,
+        lineNumber: 19,
         columnNumber: 5
     }, this);
 }
@@ -5876,6 +5892,34 @@ _c = App;
 exports.default = App;
 const vuesaxboldelement32Data = {
     className: "vuesaxlinearchart"
+};
+const coursesData = {
+    overlapGroup4: "/img/vector-3.png",
+    logoShapes7: "/img/logo-shapes-7@2x.png",
+    roadwhiz: "RoadWhiz",
+    vuesaxBoldElement3: "/img/vuesax-bold-element-3@2x.png",
+    overview: "Overview",
+    group: "/img/group@2x.png",
+    store: "Store",
+    iconBar_Chart: "/img/vuesax-linear-chart@2x.png",
+    statistics: "Statistics",
+    iconFolder: "/img/vuesax-linear-folder-2-2@2x.png",
+    courses: "Courses",
+    text: "",
+    vuesaxLinearLogin: "/img/vuesax-linear-login@2x.png",
+    logOut: "Log out",
+    overlapGroup5: "/img/rectangle-1.png",
+    title: "Courses",
+    coursesToHelpYou: "Courses to help you better your score for amazing deals and discounts on your vehicle insurance.",
+    image51: "/img/image-5-2@2x.png",
+    trafficLawsRecap: "Traffic Laws recap",
+    enroll1: "Enroll",
+    image52: "/img/image-5-3@2x.png",
+    stayingFocusedSimulation: "Staying Focused: Simulation",
+    enroll2: "Enroll",
+    image53: "/img/image-5-4@2x.png",
+    takingCarOfYourCar: "Taking car of your car",
+    enroll3: "Enroll"
 };
 const desktop1Data = {
     overlapGroup4: "/img/vector-3.png",
@@ -5900,13 +5944,13 @@ const desktop1Data = {
             "Seat Belt Usage",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 112,
+                lineNumber: 145,
                 columnNumber: 47
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.jsx",
-        lineNumber: 112,
+        lineNumber: 145,
         columnNumber: 16
     }, undefined),
     spanText2: "Good",
@@ -5915,13 +5959,13 @@ const desktop1Data = {
             "Rapid Breaking",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 114,
+                lineNumber: 147,
                 columnNumber: 46
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.jsx",
-        lineNumber: 114,
+        lineNumber: 147,
         columnNumber: 16
     }, undefined),
     spanText4: "Poor",
@@ -5930,13 +5974,13 @@ const desktop1Data = {
             "Rapid Acceleration ",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 116,
+                lineNumber: 149,
                 columnNumber: 51
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.jsx",
-        lineNumber: 116,
+        lineNumber: 149,
         columnNumber: 16
     }, undefined),
     spanText6: "Moderate",
@@ -5945,13 +5989,13 @@ const desktop1Data = {
             "Unsafe Lane Change",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 118,
+                lineNumber: 151,
                 columnNumber: 50
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.jsx",
-        lineNumber: 118,
+        lineNumber: 151,
         columnNumber: 16
     }, undefined),
     spanText8: "Moderate",
@@ -5960,13 +6004,13 @@ const desktop1Data = {
             "Vehicle Maintenance",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 120,
+                lineNumber: 153,
                 columnNumber: 51
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.jsx",
-        lineNumber: 120,
+        lineNumber: 153,
         columnNumber: 16
     }, undefined),
     spanText10: "Good",
@@ -6014,7 +6058,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./App.css":"7g3a6","react":"21dqq","react-router-dom":"cHIiW","./components/Desktop1":"k78F6","./components/HipHop":"jNdQr","./components/Rock":"16SYd","./components/Rainy":"6Trab","./components/Snowy":"4gOBS","./components/Frame1":"2uxSD","./components/LandingPage":"fecnP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Stats":"hU6zk"}],"7g3a6":[function() {},{}],"cHIiW":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./App.css":"7g3a6","react":"21dqq","react-router-dom":"cHIiW","./components/Desktop1":"k78F6","./components/HipHop":"jNdQr","./components/Rock":"16SYd","./components/Rainy":"6Trab","./components/Snowy":"4gOBS","./components/Frame1":"2uxSD","./components/LandingPage":"fecnP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Stats":"hU6zk","./components/Courses":"4xfUB"}],"7g3a6":[function() {},{}],"cHIiW":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "MemoryRouter", ()=>(0, _reactRouter.MemoryRouter));
@@ -15675,7 +15719,401 @@ $RefreshReg$(_c, "Stats");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Vuesaxboldelement3":"lofp2","../Vuesaxlinearlogin":"j1Qv6","../Vuesaxlinearnotification":"fNPtM","./Stats.css":"212dz","../Rainy":"6Trab","../Snowy":"4gOBS","react-router-dom":"cHIiW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"212dz":[function() {},{}],"j6uA9":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Vuesaxboldelement3":"lofp2","../Vuesaxlinearlogin":"j1Qv6","../Vuesaxlinearnotification":"fNPtM","./Stats.css":"212dz","../Rainy":"6Trab","../Snowy":"4gOBS","react-router-dom":"cHIiW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"212dz":[function() {},{}],"4xfUB":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$54f8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$54f8.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _coursesCss = require("../Courses/Courses.css");
+function Courses(props) {
+    const { overlapGroup4 , logoShapes7 , roadwhiz , vuesaxBoldElement3 , overview , group , store , iconBar_Chart , statistics , iconFolder , courses , text , vuesaxLinearLogin , logOut , overlapGroup5 , title , coursesToHelpYou , image51 , trafficLawsRecap , enroll1 , image52 , stayingFocusedSimulation , enroll2 , image53 , takingCarOfYourCar , enroll3  } = props;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "container-center-horizontal",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "desktop-2 screen",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "overlap-group4",
+                style: {
+                    backgroundImage: `url(${overlapGroup4})`
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex-col",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "group-178",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "logo-shapes-7",
+                                        src: logoShapes7,
+                                        alt: "Logo Shapes 7"
+                                    }, void 0, false, {
+                                        fileName: "components/Courses/index.jsx",
+                                        lineNumber: 40,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "road-whiz",
+                                        children: roadwhiz
+                                    }, void 0, false, {
+                                        fileName: "components/Courses/index.jsx",
+                                        lineNumber: 41,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "components/Courses/index.jsx",
+                                lineNumber: 39,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "group-2285",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "vuesaxboldelement-3",
+                                        src: vuesaxBoldElement3,
+                                        alt: "vuesax/bold/element-3"
+                                    }, void 0, false, {
+                                        fileName: "components/Courses/index.jsx",
+                                        lineNumber: 44,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "overview poppins-medium-black-16px",
+                                        children: overview
+                                    }, void 0, false, {
+                                        fileName: "components/Courses/index.jsx",
+                                        lineNumber: 45,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "components/Courses/index.jsx",
+                                lineNumber: 43,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "group-2284",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "group",
+                                        src: group,
+                                        alt: "Group"
+                                    }, void 0, false, {
+                                        fileName: "components/Courses/index.jsx",
+                                        lineNumber: 48,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "store poppins-medium-black-16px",
+                                        children: store
+                                    }, void 0, false, {
+                                        fileName: "components/Courses/index.jsx",
+                                        lineNumber: 49,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "components/Courses/index.jsx",
+                                lineNumber: 47,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "group-2283",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "icon-bar_chart",
+                                        src: iconBar_Chart,
+                                        alt: "icon-bar_chart"
+                                    }, void 0, false, {
+                                        fileName: "components/Courses/index.jsx",
+                                        lineNumber: 52,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "statistics poppins-medium-black-16px",
+                                        children: statistics
+                                    }, void 0, false, {
+                                        fileName: "components/Courses/index.jsx",
+                                        lineNumber: 53,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "components/Courses/index.jsx",
+                                lineNumber: 51,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "flex-row-courses",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "icon-folder",
+                                        src: iconFolder,
+                                        alt: "icon-folder"
+                                    }, void 0, false, {
+                                        fileName: "components/Courses/index.jsx",
+                                        lineNumber: 56,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "flex-col-1-courses",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "courses",
+                                                children: courses
+                                            }, void 0, false, {
+                                                fileName: "components/Courses/index.jsx",
+                                                lineNumber: 58,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "text poppins-medium-black-16px",
+                                                children: text
+                                            }, void 0, false, {
+                                                fileName: "components/Courses/index.jsx",
+                                                lineNumber: 59,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "components/Courses/index.jsx",
+                                        lineNumber: 57,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "components/Courses/index.jsx",
+                                lineNumber: 55,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "flex-row-1-courses",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "vuesaxlinearlogin",
+                                        src: vuesaxLinearLogin,
+                                        alt: "vuesax/linear/login"
+                                    }, void 0, false, {
+                                        fileName: "components/Courses/index.jsx",
+                                        lineNumber: 63,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "log-out poppins-medium-black-16px",
+                                        children: logOut
+                                    }, void 0, false, {
+                                        fileName: "components/Courses/index.jsx",
+                                        lineNumber: 64,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "components/Courses/index.jsx",
+                                lineNumber: 62,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/Courses/index.jsx",
+                        lineNumber: 38,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "overlap-group5-courses",
+                        style: {
+                            backgroundImage: `url(${overlapGroup5})`
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: "title",
+                                children: title
+                            }, void 0, false, {
+                                fileName: "components/Courses/index.jsx",
+                                lineNumber: 68,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "courses-to-help-you",
+                                children: coursesToHelpYou
+                            }, void 0, false, {
+                                fileName: "components/Courses/index.jsx",
+                                lineNumber: 69,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-group-container",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "overlap-group-1-courses",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "image-5",
+                                                src: image51,
+                                                alt: "image 5"
+                                            }, void 0, false, {
+                                                fileName: "components/Courses/index.jsx",
+                                                lineNumber: 72,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "traffic-laws-recap poppins-medium-big-stone-15px",
+                                                children: trafficLawsRecap
+                                            }, void 0, false, {
+                                                fileName: "components/Courses/index.jsx",
+                                                lineNumber: 73,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "overlap-group-courses",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "enroll poppins-medium-big-stone-15px",
+                                                    children: enroll1
+                                                }, void 0, false, {
+                                                    fileName: "components/Courses/index.jsx",
+                                                    lineNumber: 75,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "components/Courses/index.jsx",
+                                                lineNumber: 74,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "components/Courses/index.jsx",
+                                        lineNumber: 71,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "overlap-group2-courses",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "image-5-1",
+                                                src: image52,
+                                                alt: "image 5"
+                                            }, void 0, false, {
+                                                fileName: "components/Courses/index.jsx",
+                                                lineNumber: 79,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "staying-focused-simulation poppins-medium-big-stone-15px",
+                                                children: stayingFocusedSimulation
+                                            }, void 0, false, {
+                                                fileName: "components/Courses/index.jsx",
+                                                lineNumber: 80,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "overlap-group-2-courses",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "enroll poppins-medium-big-stone-15px",
+                                                    children: enroll2
+                                                }, void 0, false, {
+                                                    fileName: "components/Courses/index.jsx",
+                                                    lineNumber: 84,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "components/Courses/index.jsx",
+                                                lineNumber: 83,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "components/Courses/index.jsx",
+                                        lineNumber: 78,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "overlap-group3-courses",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "image-5",
+                                                src: image53,
+                                                alt: "image 5"
+                                            }, void 0, false, {
+                                                fileName: "components/Courses/index.jsx",
+                                                lineNumber: 88,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                className: "taking-car-of-your-car poppins-medium-big-stone-15px",
+                                                children: takingCarOfYourCar
+                                            }, void 0, false, {
+                                                fileName: "components/Courses/index.jsx",
+                                                lineNumber: 89,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "overlap-group-courses",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "enroll poppins-medium-big-stone-15px",
+                                                    children: enroll3
+                                                }, void 0, false, {
+                                                    fileName: "components/Courses/index.jsx",
+                                                    lineNumber: 91,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "components/Courses/index.jsx",
+                                                lineNumber: 90,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "components/Courses/index.jsx",
+                                        lineNumber: 87,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "components/Courses/index.jsx",
+                                lineNumber: 70,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/Courses/index.jsx",
+                        lineNumber: 67,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "components/Courses/index.jsx",
+                lineNumber: 37,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "components/Courses/index.jsx",
+            lineNumber: 36,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "components/Courses/index.jsx",
+        lineNumber: 35,
+        columnNumber: 5
+    }, this);
+}
+_c = Courses;
+exports.default = Courses;
+var _c;
+$RefreshReg$(_c, "Courses");
+
+  $parcel$ReactRefreshHelpers$54f8.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Courses/Courses.css":"giDf2"}],"giDf2":[function() {},{}],"j6uA9":[function(require,module,exports) {
 "use strict";
 function checkDCE() {
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") return;
