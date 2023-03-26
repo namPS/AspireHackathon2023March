@@ -5653,22 +5653,30 @@ var _frame1 = require("./components/Frame1");
 var _frame1Default = parcelHelpers.interopDefault(_frame1);
 var _landingPage = require("./components/LandingPage");
 var _landingPageDefault = parcelHelpers.interopDefault(_landingPage);
+var _stats = require("./components/Stats");
+var _statsDefault = parcelHelpers.interopDefault(_stats);
+var _s = $RefreshSig$();
 function App() {
+    _s();
+    const [clientInfo, setClientInfo] = (0, _reactDefault.default).useState(null);
+    console.log("clientInfo", clientInfo);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Switch), {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                     path: "/desktop-1",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _desktop1Default.default), {
-                        ...desktop1Data
+                        ...desktop1Data,
+                        clientInfo: clientInfo,
+                        setClientInfo: setClientInfo
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 17,
+                        lineNumber: 21,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 16,
+                    lineNumber: 20,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5680,12 +5688,12 @@ function App() {
                         maskGroup: "/img/mask-group-4.png"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 20,
+                        lineNumber: 24,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 19,
+                    lineNumber: 23,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5697,12 +5705,12 @@ function App() {
                         maskGroup: "/img/mask-group.png"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 28,
+                        lineNumber: 32,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 27,
+                    lineNumber: 31,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5715,12 +5723,12 @@ function App() {
                         className: "jazz"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 36,
+                        lineNumber: 40,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 35,
+                    lineNumber: 39,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5733,12 +5741,12 @@ function App() {
                         className: "rock"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 45,
+                        lineNumber: 49,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 44,
+                    lineNumber: 48,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5751,12 +5759,12 @@ function App() {
                         className: "hiphop"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 54,
+                        lineNumber: 58,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 53,
+                    lineNumber: 57,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5767,12 +5775,12 @@ function App() {
                         rainCloud: "/img/rain-cloud@2x.png"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 63,
+                        lineNumber: 67,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 62,
+                    lineNumber: 66,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5783,12 +5791,12 @@ function App() {
                         snowCloud: "/img/snow-cloud@2x.png"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 66,
+                        lineNumber: 70,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 65,
+                    lineNumber: 69,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5798,12 +5806,12 @@ function App() {
                         sunny: "Sunny"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 69,
+                        lineNumber: 73,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 68,
+                    lineNumber: 72,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5814,40 +5822,56 @@ function App() {
                         className: "frame-1"
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 72,
+                        lineNumber: 76,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 71,
+                    lineNumber: 75,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/stats",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _statsDefault.default), {
+                        ...desktop1Data
+                    }, void 0, false, {
+                        fileName: "App.jsx",
+                        lineNumber: 79,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "App.jsx",
+                    lineNumber: 78,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                     path: "/:path(|landing-page)",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _landingPageDefault.default), {
-                        ...landingPageData
+                        ...landingPageData,
+                        setClientInfo: setClientInfo
                     }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 75,
+                        lineNumber: 82,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 74,
+                    lineNumber: 81,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "App.jsx",
-            lineNumber: 15,
+            lineNumber: 19,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "App.jsx",
-        lineNumber: 14,
+        lineNumber: 18,
         columnNumber: 5
     }, this);
 }
+_s(App, "nLgpVIWn2es51tm73z1Q9H43ei4=");
 _c = App;
 exports.default = App;
 const vuesaxboldelement32Data = {
@@ -5864,27 +5888,25 @@ const desktop1Data = {
     iconFolder: "/img/vuesax-linear-folder-2@2x.png",
     courses: "Courses",
     text: "",
-    logOut: "Log out",
     overlapGroup5: "/img/rectangle-1.png",
     title: "Overview",
-    welcomeBackCustom: "Welcome back, CustomerID! Here is your last ride details",
+    welcomeBackCustom: "Welcome back, [CustomerID]! Here is your last ride details",
     mesh08: "/img/mesh-08.png",
-    x72Score: "7.2 SCORE",
     yourLastTripToEndingLocation: "Your Last Trip to ‘Ending Location’",
-    betterThan86OfDrivers: "Better than 86% of drivers",
+    betterThan86OfDrivers: "Better than [driverAverage]% of drivers",
     i: "i",
     spanText1: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactDefault.default).Fragment, {
         children: [
             "Seat Belt Usage",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 107,
+                lineNumber: 112,
                 columnNumber: 47
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.jsx",
-        lineNumber: 107,
+        lineNumber: 112,
         columnNumber: 16
     }, undefined),
     spanText2: "Good",
@@ -5893,13 +5915,13 @@ const desktop1Data = {
             "Rapid Breaking",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 109,
+                lineNumber: 114,
                 columnNumber: 46
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.jsx",
-        lineNumber: 109,
+        lineNumber: 114,
         columnNumber: 16
     }, undefined),
     spanText4: "Poor",
@@ -5908,13 +5930,13 @@ const desktop1Data = {
             "Rapid Acceleration ",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 111,
+                lineNumber: 116,
                 columnNumber: 51
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.jsx",
-        lineNumber: 111,
+        lineNumber: 116,
         columnNumber: 16
     }, undefined),
     spanText6: "Moderate",
@@ -5923,13 +5945,13 @@ const desktop1Data = {
             "Unsafe Lane Change",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 113,
+                lineNumber: 118,
                 columnNumber: 50
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.jsx",
-        lineNumber: 113,
+        lineNumber: 118,
         columnNumber: 16
     }, undefined),
     spanText8: "Moderate",
@@ -5938,23 +5960,24 @@ const desktop1Data = {
             "Vehicle Maintenance",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 115,
+                lineNumber: 120,
                 columnNumber: 51
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.jsx",
-        lineNumber: 115,
+        lineNumber: 120,
         columnNumber: 16
     }, undefined),
     spanText10: "Good",
     surname: "Snow Shower",
     text1: "-10\xb0",
     snowCloud: "/img/snow-cloud@2x.png",
+    rainyDay: "/img/rainy@2x.png",
+    clearDay: "/img/clear@2x.png",
     distance: "Distance",
     fuelConsumption: "Fuel Consumption",
     timeSpent: "Time Spent",
-    trafficCondition: "Traffic Condition",
     overlapGroup10: "/img/image-1@2x.png",
     routeTaken: "Route Taken",
     youListenedTo: "You listened to",
@@ -5965,7 +5988,7 @@ const desktop1Data = {
     cust0001: "Cust0001",
     line1: "/img/line-1@2x.png",
     recommendations: "Recommendations",
-    youHaveAvailed25: "You have availed 25% off on your insurance premium",
+    insurancePercent: "You have [insurancePercent] off on your insurance premium",
     registerNow: "Register now",
     getHeatedSeating: "Get Heated seating",
     availADiscountNow: "Avail a discount now",
@@ -5991,7 +6014,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./App.css":"7g3a6","react":"21dqq","react-router-dom":"cHIiW","./components/Desktop1":"k78F6","./components/HipHop":"jNdQr","./components/Rock":"16SYd","./components/Rainy":"6Trab","./components/Snowy":"4gOBS","./components/Frame1":"2uxSD","./components/LandingPage":"fecnP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7g3a6":[function() {},{}],"cHIiW":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./App.css":"7g3a6","react":"21dqq","react-router-dom":"cHIiW","./components/Desktop1":"k78F6","./components/HipHop":"jNdQr","./components/Rock":"16SYd","./components/Rainy":"6Trab","./components/Snowy":"4gOBS","./components/Frame1":"2uxSD","./components/LandingPage":"fecnP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Stats":"hU6zk"}],"7g3a6":[function() {},{}],"cHIiW":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "MemoryRouter", ()=>(0, _reactRouter.MemoryRouter));
@@ -9046,8 +9069,28 @@ var _vuesaxlinearloginDefault = parcelHelpers.interopDefault(_vuesaxlinearlogin)
 var _vuesaxlinearnotification = require("../Vuesaxlinearnotification");
 var _vuesaxlinearnotificationDefault = parcelHelpers.interopDefault(_vuesaxlinearnotification);
 var _desktop1Css = require("./Desktop1.css");
+var _rainy = require("../Rainy");
+var _rainyDefault = parcelHelpers.interopDefault(_rainy);
+var _snowy = require("../Snowy");
+var _snowyDefault = parcelHelpers.interopDefault(_snowy);
+var _reactRouterDom = require("react-router-dom");
+var _frame1 = require("../Frame1");
+var _frame1Default = parcelHelpers.interopDefault(_frame1);
+var _s = $RefreshSig$();
 function Desktop1(props) {
-    const { overlapGroup4 , logoShapes7 , roadwhiz , overview , group , store , statistics , iconFolder , courses , text , logOut , overlapGroup5 , title , welcomeBackCustom , mesh08 , x72Score , yourLastTripToEndingLocation , betterThan86OfDrivers , i , spanText1 , spanText2 , spanText3 , spanText4 , spanText5 , spanText6 , spanText7 , spanText8 , spanText9 , spanText10 , surname , text1 , snowCloud , distance , fuelConsumption , timeSpent , trafficCondition , overlapGroup10 , routeTaken , youListenedTo , viewPlaylist , pop , maskGroup , ellipse2 , cust0001 , line1 , recommendations , youHaveAvailed25 , registerNow , getHeatedSeating , availADiscountNow , vuesaxboldelement3Props  } = props;
+    _s();
+    const { overlapGroup4 , logoShapes7 , roadwhiz , overview , group , store , statistics , iconFolder , courses , text , overlapGroup5 , title , welcomeBackCustom , mesh08 , betterThan86OfDrivers , i , spanText1 , spanText3 , spanText4 , spanText5 , spanText6 , spanText7 , spanText8 , spanText9 , spanText10 , surname , text1 , clearDay , distance , fuelConsumption , timeSpent , overlapGroup10 , routeTaken , youListenedTo , viewPlaylist , pop , maskGroup , ellipse2 , line1 , recommendations , insurancePercent , registerNow , getHeatedSeating , availADiscountNow , vuesaxboldelement3Props , clientInfo , setClientInfo  } = props;
+    const history = (0, _reactRouterDom.useHistory)();
+    const backToHomepage = ()=>{
+        history.push("/");
+        setClientInfo(null);
+    };
+    const backToOverview = ()=>{
+        history.push("/desktop-1");
+    };
+    const goToStatisticsPage = ()=>{
+        history.push("/stats");
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "container-center-horizontal",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9073,18 +9116,18 @@ function Desktop1(props) {
                                                 alt: "Logo Shapes 7"
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 69,
+                                                lineNumber: 85,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _vuesaxboldelement3Default.default), {}, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 70,
+                                                lineNumber: 86,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 68,
+                                        lineNumber: 84,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9092,30 +9135,32 @@ function Desktop1(props) {
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                 className: "road-whiz",
+                                                onClick: backToOverview,
                                                 children: roadwhiz
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 73,
+                                                lineNumber: 89,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                 className: "overview",
+                                                onClick: backToOverview,
                                                 children: overview
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 74,
+                                                lineNumber: 90,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 72,
+                                        lineNumber: 88,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Desktop1/index.jsx",
-                                lineNumber: 67,
+                                lineNumber: 83,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9127,7 +9172,7 @@ function Desktop1(props) {
                                         alt: "Group"
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 78,
+                                        lineNumber: 94,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9135,13 +9180,13 @@ function Desktop1(props) {
                                         children: store
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 79,
+                                        lineNumber: 95,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Desktop1/index.jsx",
-                                lineNumber: 77,
+                                lineNumber: 93,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9151,21 +9196,22 @@ function Desktop1(props) {
                                         className: vuesaxboldelement3Props.className
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 82,
+                                        lineNumber: 98,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "statistics poppins-medium-black-16px",
+                                        onClick: goToStatisticsPage,
                                         children: statistics
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 83,
+                                        lineNumber: 99,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Desktop1/index.jsx",
-                                lineNumber: 81,
+                                lineNumber: 97,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9180,7 +9226,7 @@ function Desktop1(props) {
                                                 alt: "icon-folder"
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 87,
+                                                lineNumber: 103,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9188,13 +9234,13 @@ function Desktop1(props) {
                                                 children: courses
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 88,
+                                                lineNumber: 104,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 86,
+                                        lineNumber: 102,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9202,13 +9248,13 @@ function Desktop1(props) {
                                         children: text
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 90,
+                                        lineNumber: 106,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Desktop1/index.jsx",
-                                lineNumber: 85,
+                                lineNumber: 101,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9216,27 +9262,28 @@ function Desktop1(props) {
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _vuesaxlinearloginDefault.default), {}, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 93,
+                                        lineNumber: 109,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "log-out poppins-medium-black-16px",
-                                        children: logOut
+                                        onClick: backToHomepage,
+                                        children: "log Out"
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 94,
+                                        lineNumber: 110,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Desktop1/index.jsx",
-                                lineNumber: 92,
+                                lineNumber: 108,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "components/Desktop1/index.jsx",
-                        lineNumber: 66,
+                        lineNumber: 82,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9253,15 +9300,15 @@ function Desktop1(props) {
                                         children: title
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 99,
+                                        lineNumber: 115,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         className: "welcome-back-custom",
-                                        children: welcomeBackCustom
+                                        children: welcomeBackCustom.replace("[CustomerID]", clientInfo?.response.Customer_ID)
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 100,
+                                        lineNumber: 116,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9276,181 +9323,84 @@ function Desktop1(props) {
                                                         alt: "Mesh-08"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 103,
+                                                        lineNumber: 119,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "x72-score jost-bold-big-stone-24px",
-                                                        children: x72Score
-                                                    }, void 0, false, {
+                                                        children: [
+                                                            "Score: ",
+                                                            clientInfo?.response?.COMPOSITE_DRIVER_SCORE
+                                                        ]
+                                                    }, void 0, true, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 104,
+                                                        lineNumber: 120,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                         className: "your-last-trip-to-ending-location jost-bold-big-stone-24px",
-                                                        children: yourLastTripToEndingLocation
+                                                        children: clientInfo?.response.yourLastTripToEndingLocation
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 105,
+                                                        lineNumber: 121,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                         className: "better-than-86-of-drivers poppins-medium-big-stone-15px",
-                                                        children: betterThan86OfDrivers
+                                                        children: betterThan86OfDrivers.replace("[driverAverage]", clientInfo?.response?.COMPOSITE_DRIVER_SCORE_PERCENTILE)
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 108,
+                                                        lineNumber: 124,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "rectangle-34"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 109,
+                                                        lineNumber: 125,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "rectangle-38"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 110,
+                                                        lineNumber: 126,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "rectangle-35"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 111,
+                                                        lineNumber: 127,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "rectangle-39"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 112,
+                                                        lineNumber: 128,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "rectangle-36"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 113,
+                                                        lineNumber: 129,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        className: "overlap-group2",
+                                                        className: "overlap-group2 info-icon",
                                                         children: [
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                                 className: "i",
                                                                 children: i
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 115,
+                                                                lineNumber: 131,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                                 className: "ellipse-44"
-                                                            }, void 0, false, {
-                                                                fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 116,
-                                                                columnNumber: 21
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 114,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        className: "seat-belt-usage-good poppins-medium-white-15px",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                className: "poppins-medium-big-stone-15px",
-                                                                children: spanText1
-                                                            }, void 0, false, {
-                                                                fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 119,
-                                                                columnNumber: 21
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                className: "poppins-medium-fruit-salad-15px",
-                                                                children: spanText2
-                                                            }, void 0, false, {
-                                                                fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 120,
-                                                                columnNumber: 21
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 118,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        className: "rapid-breaking-poor poppins-medium-white-15px",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                className: "poppins-medium-big-stone-15px",
-                                                                children: spanText3
-                                                            }, void 0, false, {
-                                                                fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 123,
-                                                                columnNumber: 21
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                className: "span1",
-                                                                children: spanText4
-                                                            }, void 0, false, {
-                                                                fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 124,
-                                                                columnNumber: 21
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 122,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        className: "rapid-acceleration-moderate poppins-medium-white-15px",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                className: "poppins-medium-big-stone-15px",
-                                                                children: spanText5
-                                                            }, void 0, false, {
-                                                                fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 127,
-                                                                columnNumber: 21
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                className: "poppins-medium-tangerine-15px",
-                                                                children: spanText6
-                                                            }, void 0, false, {
-                                                                fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 128,
-                                                                columnNumber: 21
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 126,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        className: "unsafe-lane-change-moderate poppins-medium-white-15px",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                className: "poppins-medium-big-stone-15px",
-                                                                children: spanText7
-                                                            }, void 0, false, {
-                                                                fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 131,
-                                                                columnNumber: 21
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                className: "poppins-medium-tangerine-15px",
-                                                                children: spanText8
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
                                                                 lineNumber: 132,
@@ -9463,23 +9413,39 @@ function Desktop1(props) {
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        className: "vehicle-maintenance-good poppins-medium-white-15px",
+                                                        className: "seat-belt-usage-good poppins-medium-white-15px",
                                                         children: [
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                                 className: "poppins-medium-big-stone-15px",
-                                                                children: spanText9
+                                                                children: spanText1
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
                                                                 lineNumber: 135,
                                                                 columnNumber: 21
                                                             }, this),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            clientInfo?.response?.SEATBELT_RATING === "GOOD" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                                 className: "poppins-medium-fruit-salad-15px",
-                                                                children: spanText10
+                                                                children: clientInfo?.response?.SEATBELT_RATING
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
                                                                 lineNumber: 136,
-                                                                columnNumber: 21
+                                                                columnNumber: 74
+                                                            }, this),
+                                                            clientInfo?.response?.SEATBELT_RATING === "MODERATE" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "poppins-medium-tangerine-15px",
+                                                                children: clientInfo?.response?.SEATBELT_RATING
+                                                            }, void 0, false, {
+                                                                fileName: "components/Desktop1/index.jsx",
+                                                                lineNumber: 137,
+                                                                columnNumber: 78
+                                                            }, this),
+                                                            clientInfo?.response?.SEATBELT_RATING === "POOR" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "span1",
+                                                                children: clientInfo?.response?.SEATBELT_RATING
+                                                            }, void 0, false, {
+                                                                fileName: "components/Desktop1/index.jsx",
+                                                                lineNumber: 138,
+                                                                columnNumber: 74
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
@@ -9488,21 +9454,178 @@ function Desktop1(props) {
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        className: "overlap-group3",
+                                                        className: "rapid-breaking-poor poppins-medium-white-15px",
                                                         children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                className: "rectangle-31"
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "poppins-medium-big-stone-15px",
+                                                                children: spanText3
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 139,
+                                                                lineNumber: 141,
                                                                 columnNumber: 21
                                                             }, this),
+                                                            clientInfo?.response?.HARD_BRAKING_RATING === "GOOD" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "poppins-medium-fruit-salad-15px",
+                                                                children: clientInfo?.response?.HARD_BRAKING_RATING
+                                                            }, void 0, false, {
+                                                                fileName: "components/Desktop1/index.jsx",
+                                                                lineNumber: 142,
+                                                                columnNumber: 78
+                                                            }, this),
+                                                            clientInfo?.response?.HARD_BRAKING_RATING === "MODERATE" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "poppins-medium-tangerine-15px",
+                                                                children: clientInfo?.response?.HARD_BRAKING_RATING
+                                                            }, void 0, false, {
+                                                                fileName: "components/Desktop1/index.jsx",
+                                                                lineNumber: 143,
+                                                                columnNumber: 82
+                                                            }, this),
+                                                            clientInfo?.response?.HARD_BRAKING_RATING === "POOR" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "span1",
+                                                                children: clientInfo?.response?.HARD_BRAKING_RATING
+                                                            }, void 0, false, {
+                                                                fileName: "components/Desktop1/index.jsx",
+                                                                lineNumber: 144,
+                                                                columnNumber: 78
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "components/Desktop1/index.jsx",
+                                                        lineNumber: 140,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "rapid-acceleration-moderate poppins-medium-white-15px",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "poppins-medium-big-stone-15px",
+                                                                children: spanText5
+                                                            }, void 0, false, {
+                                                                fileName: "components/Desktop1/index.jsx",
+                                                                lineNumber: 147,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            clientInfo?.response?.ACCELERATION_RATING === "GOOD" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "poppins-medium-fruit-salad-15px",
+                                                                children: clientInfo?.response?.ACCELERATION_RATING
+                                                            }, void 0, false, {
+                                                                fileName: "components/Desktop1/index.jsx",
+                                                                lineNumber: 148,
+                                                                columnNumber: 78
+                                                            }, this),
+                                                            clientInfo?.response?.ACCELERATION_RATING === "MODERATE" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "poppins-medium-tangerine-15px",
+                                                                children: clientInfo?.response?.ACCELERATION_RATING
+                                                            }, void 0, false, {
+                                                                fileName: "components/Desktop1/index.jsx",
+                                                                lineNumber: 149,
+                                                                columnNumber: 82
+                                                            }, this),
+                                                            clientInfo?.response?.ACCELERATION_RATING === "POOR" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "span1",
+                                                                children: clientInfo?.response?.ACCELERATION_RATING
+                                                            }, void 0, false, {
+                                                                fileName: "components/Desktop1/index.jsx",
+                                                                lineNumber: 150,
+                                                                columnNumber: 78
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "components/Desktop1/index.jsx",
+                                                        lineNumber: 146,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "unsafe-lane-change-moderate poppins-medium-white-15px",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "poppins-medium-big-stone-15px",
+                                                                children: spanText7
+                                                            }, void 0, false, {
+                                                                fileName: "components/Desktop1/index.jsx",
+                                                                lineNumber: 153,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            clientInfo?.response?.LANE_CHANGE_RATING === "GOOD" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "poppins-medium-fruit-salad-15px",
+                                                                children: clientInfo?.response?.LANE_CHANGE_RATING
+                                                            }, void 0, false, {
+                                                                fileName: "components/Desktop1/index.jsx",
+                                                                lineNumber: 154,
+                                                                columnNumber: 77
+                                                            }, this),
+                                                            clientInfo?.response?.LANE_CHANGE_RATING === "MODERATE" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "poppins-medium-tangerine-15px",
+                                                                children: clientInfo?.response?.LANE_CHANGE_RATING
+                                                            }, void 0, false, {
+                                                                fileName: "components/Desktop1/index.jsx",
+                                                                lineNumber: 155,
+                                                                columnNumber: 81
+                                                            }, this),
+                                                            clientInfo?.response?.LANE_CHANGE_RATING === "POOR" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "span1",
+                                                                children: clientInfo?.response?.LANE_CHANGE_RATING
+                                                            }, void 0, false, {
+                                                                fileName: "components/Desktop1/index.jsx",
+                                                                lineNumber: 156,
+                                                                columnNumber: 77
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "components/Desktop1/index.jsx",
+                                                        lineNumber: 152,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "vehicle-maintenance-good poppins-medium-white-15px",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "poppins-medium-big-stone-15px",
+                                                                children: spanText9
+                                                            }, void 0, false, {
+                                                                fileName: "components/Desktop1/index.jsx",
+                                                                lineNumber: 159,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            clientInfo?.response?.Vehicle_Maintenance_RATING === "GOOD" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "poppins-medium-fruit-salad-15px",
+                                                                children: clientInfo?.response?.Vehicle_Maintenance_RATING
+                                                            }, void 0, false, {
+                                                                fileName: "components/Desktop1/index.jsx",
+                                                                lineNumber: 160,
+                                                                columnNumber: 85
+                                                            }, this),
+                                                            clientInfo?.response?.Vehicle_Maintenance_RATING === "MODERATE" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "poppins-medium-tangerine-15px",
+                                                                children: clientInfo?.response?.Vehicle_Maintenance_RATING
+                                                            }, void 0, false, {
+                                                                fileName: "components/Desktop1/index.jsx",
+                                                                lineNumber: 161,
+                                                                columnNumber: 89
+                                                            }, this),
+                                                            clientInfo?.response?.Vehicle_Maintenance_RATING === "POOR" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "span1",
+                                                                children: clientInfo?.response?.Vehicle_Maintenance_RATING
+                                                            }, void 0, false, {
+                                                                fileName: "components/Desktop1/index.jsx",
+                                                                lineNumber: 162,
+                                                                columnNumber: 85
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "components/Desktop1/index.jsx",
+                                                        lineNumber: 158,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "overlap-group3-weather",
+                                                        children: [
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                                 className: "surname poppins-medium-cararra-15px",
                                                                 children: surname
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 140,
+                                                                lineNumber: 166,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9510,60 +9633,91 @@ function Desktop1(props) {
                                                                 children: text1
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 141,
+                                                                lineNumber: 167,
                                                                 columnNumber: 21
                                                             }, this),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                                className: "snow-cloud",
-                                                                src: snowCloud,
-                                                                alt: "Snow Cloud"
+                                                            clientInfo?.response?.Weather_conditions === "snowy" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _snowyDefault.default), {
+                                                                surname: "Snow Shower",
+                                                                text1: "-10\xb0",
+                                                                snowCloud: "/img/snow-cloud@2x.png"
                                                             }, void 0, false, {
                                                                 fileName: "components/Desktop1/index.jsx",
-                                                                lineNumber: 142,
-                                                                columnNumber: 21
+                                                                lineNumber: 168,
+                                                                columnNumber: 78
+                                                            }, this),
+                                                            clientInfo?.response?.Weather_conditions === "rainy" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _rainyDefault.default), {
+                                                                text1: "9\xb0",
+                                                                rainy: "Rainy",
+                                                                rainCloud: "/img/rain-cloud@2x.png"
+                                                            }, void 0, false, {
+                                                                fileName: "components/Desktop1/index.jsx",
+                                                                lineNumber: 169,
+                                                                columnNumber: 78
+                                                            }, this),
+                                                            clientInfo?.response?.Weather_conditions === "clear" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _frame1Default.default), {
+                                                                text1: "12\xb0",
+                                                                sunny: "Sunny"
+                                                            }, void 0, false, {
+                                                                fileName: "components/Desktop1/index.jsx",
+                                                                lineNumber: 170,
+                                                                columnNumber: 78
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 138,
+                                                        lineNumber: 165,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 102,
+                                                lineNumber: 118,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                 className: "distance",
-                                                children: distance
-                                            }, void 0, false, {
+                                                children: [
+                                                    distance,
+                                                    ": ",
+                                                    clientInfo?.response?.LAST_TRIP_DISTANCE.toFixed(2),
+                                                    " miles"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 145,
+                                                lineNumber: 174,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                 className: "fuel-consumption",
-                                                children: fuelConsumption
-                                            }, void 0, false, {
+                                                children: [
+                                                    fuelConsumption,
+                                                    ": ",
+                                                    clientInfo?.response?.Total_Fuel_consumption.toFixed(2),
+                                                    " "
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 146,
+                                                lineNumber: 175,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                 className: "time-spent",
-                                                children: timeSpent
-                                            }, void 0, false, {
+                                                children: [
+                                                    timeSpent,
+                                                    " : ",
+                                                    clientInfo?.response?.LAST_TRIP_TIME.toFixed(2)
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 147,
+                                                lineNumber: 176,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                 className: "traffic-condition",
-                                                children: trafficCondition
+                                                children: clientInfo?.response?.Traffic_conditions
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 148,
+                                                lineNumber: 177,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9576,7 +9730,7 @@ function Desktop1(props) {
                                                         className: "rectangle-33"
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 150,
+                                                        lineNumber: 179,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9584,19 +9738,19 @@ function Desktop1(props) {
                                                         children: routeTaken
                                                     }, void 0, false, {
                                                         fileName: "components/Desktop1/index.jsx",
-                                                        lineNumber: 151,
+                                                        lineNumber: 180,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 149,
+                                                lineNumber: 178,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 101,
+                                        lineNumber: 117,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9606,7 +9760,7 @@ function Desktop1(props) {
                                                 className: "rectangle-41"
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 155,
+                                                lineNumber: 184,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9614,7 +9768,7 @@ function Desktop1(props) {
                                                 children: youListenedTo
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 156,
+                                                lineNumber: 185,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9622,43 +9776,159 @@ function Desktop1(props) {
                                                 children: viewPlaylist
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 157,
+                                                lineNumber: 186,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "pop jost-extra-bold-white-45px",
-                                                children: pop
-                                            }, void 0, false, {
-                                                fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 158,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                className: "mask-group",
-                                                src: maskGroup,
-                                                alt: "Mask group"
-                                            }, void 0, false, {
-                                                fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 159,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "rectangle-40"
-                                            }, void 0, false, {
-                                                fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 160,
-                                                columnNumber: 17
-                                            }, this)
+                                            clientInfo?.response?.GENRE === "hip-hop" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "pop jost-extra-bold-white-45px",
+                                                        children: "Hip Hop"
+                                                    }, void 0, false, {
+                                                        fileName: "components/Desktop1/index.jsx",
+                                                        lineNumber: 187,
+                                                        columnNumber: 66
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                        className: "mask-group",
+                                                        src: "/img/mask-group-hiphop.png",
+                                                        alt: "Mask group"
+                                                    }, void 0, false, {
+                                                        fileName: "components/Desktop1/index.jsx",
+                                                        lineNumber: 188,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "rectangle-40"
+                                                    }, void 0, false, {
+                                                        fileName: "components/Desktop1/index.jsx",
+                                                        lineNumber: 189,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true),
+                                            clientInfo?.response?.GENRE === "pop" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "pop jost-extra-bold-white-45px",
+                                                        children: "POP"
+                                                    }, void 0, false, {
+                                                        fileName: "components/Desktop1/index.jsx",
+                                                        lineNumber: 190,
+                                                        columnNumber: 62
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                        className: "mask-group",
+                                                        src: "/img/mask-group-pop.png",
+                                                        alt: "Mask group"
+                                                    }, void 0, false, {
+                                                        fileName: "components/Desktop1/index.jsx",
+                                                        lineNumber: 191,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "rectangle-40"
+                                                    }, void 0, false, {
+                                                        fileName: "components/Desktop1/index.jsx",
+                                                        lineNumber: 192,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true),
+                                            clientInfo?.response?.GENRE === "rock" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "pop jost-extra-bold-white-45px",
+                                                        children: "ROCK"
+                                                    }, void 0, false, {
+                                                        fileName: "components/Desktop1/index.jsx",
+                                                        lineNumber: 193,
+                                                        columnNumber: 63
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                        className: "mask-group",
+                                                        src: "/img/mask-group-rock.png",
+                                                        alt: "Mask group"
+                                                    }, void 0, false, {
+                                                        fileName: "components/Desktop1/index.jsx",
+                                                        lineNumber: 194,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "rectangle-40"
+                                                    }, void 0, false, {
+                                                        fileName: "components/Desktop1/index.jsx",
+                                                        lineNumber: 195,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true),
+                                            clientInfo?.response?.GENRE === "jazz" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "pop jost-extra-bold-white-45px",
+                                                        children: "JAZZ"
+                                                    }, void 0, false, {
+                                                        fileName: "components/Desktop1/index.jsx",
+                                                        lineNumber: 196,
+                                                        columnNumber: 63
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                        className: "mask-group",
+                                                        src: "/img/mask-group-jazz.png",
+                                                        alt: "Mask group"
+                                                    }, void 0, false, {
+                                                        fileName: "components/Desktop1/index.jsx",
+                                                        lineNumber: 197,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "rectangle-40"
+                                                    }, void 0, false, {
+                                                        fileName: "components/Desktop1/index.jsx",
+                                                        lineNumber: 198,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true),
+                                            clientInfo?.response?.GENRE === "classical" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "pop jost-extra-bold-white-45px",
+                                                        children: "CLASSICAL"
+                                                    }, void 0, false, {
+                                                        fileName: "components/Desktop1/index.jsx",
+                                                        lineNumber: 199,
+                                                        columnNumber: 68
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                        className: "mask-group",
+                                                        src: "/img/mask-group-classical.png",
+                                                        alt: "Mask group"
+                                                    }, void 0, false, {
+                                                        fileName: "components/Desktop1/index.jsx",
+                                                        lineNumber: 200,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "rectangle-40"
+                                                    }, void 0, false, {
+                                                        fileName: "components/Desktop1/index.jsx",
+                                                        lineNumber: 201,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 154,
+                                        lineNumber: 183,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Desktop1/index.jsx",
-                                lineNumber: 98,
+                                lineNumber: 114,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9670,15 +9940,15 @@ function Desktop1(props) {
                                         alt: "Ellipse 2"
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 164,
+                                        lineNumber: 205,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "cust0001 valign-text-middle",
-                                        children: cust0001
+                                        children: clientInfo?.response?.Customer_ID
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 165,
+                                        lineNumber: 206,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -9687,7 +9957,7 @@ function Desktop1(props) {
                                         alt: "Line 1"
                                     }, void 0, false, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 166,
+                                        lineNumber: 207,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9698,55 +9968,55 @@ function Desktop1(props) {
                                                 children: recommendations
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 168,
+                                                lineNumber: 209,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                 className: "notif",
                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _vuesaxlinearnotificationDefault.default), {}, void 0, false, {
                                                     fileName: "components/Desktop1/index.jsx",
-                                                    lineNumber: 170,
+                                                    lineNumber: 211,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 169,
+                                                lineNumber: 210,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 167,
+                                        lineNumber: 208,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "group-container",
+                                        className: "group-container-desktop",
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                 className: "group-15"
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 174,
+                                                lineNumber: 215,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                 className: "group-17",
                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: "overlap-group",
+                                                    className: "overlap-group overlap-group-recommendation",
                                                     children: [
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                             className: "rectangle-1"
                                                         }, void 0, false, {
                                                             fileName: "components/Desktop1/index.jsx",
-                                                            lineNumber: 177,
+                                                            lineNumber: 218,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                             className: "you-have-availed-25 manrope-bold-mine-shaft-10px",
-                                                            children: youHaveAvailed25
+                                                            children: insurancePercent.replace("[insurancePercent]", "10%")
                                                         }, void 0, false, {
                                                             fileName: "components/Desktop1/index.jsx",
-                                                            lineNumber: 178,
+                                                            lineNumber: 219,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9754,46 +10024,101 @@ function Desktop1(props) {
                                                             children: registerNow
                                                         }, void 0, false, {
                                                             fileName: "components/Desktop1/index.jsx",
-                                                            lineNumber: 179,
+                                                            lineNumber: 220,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "components/Desktop1/index.jsx",
-                                                    lineNumber: 176,
+                                                    lineNumber: 217,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 175,
+                                                lineNumber: 216,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 173,
+                                        lineNumber: 214,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    clientInfo?.response?.INSURANCE_PREMIUM_DISCOUNT && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "group-container-desktop",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "group-15"
+                                            }, void 0, false, {
+                                                fileName: "components/Desktop1/index.jsx",
+                                                lineNumber: 225,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "group-17",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "overlap-group overlap-group-recommendation",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "rectangle-1"
+                                                        }, void 0, false, {
+                                                            fileName: "components/Desktop1/index.jsx",
+                                                            lineNumber: 228,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                            className: "you-have-availed-25 manrope-bold-mine-shaft-10px",
+                                                            children: insurancePercent.replace("[insurancePercent]", clientInfo?.response?.INSURANCE_PREMIUM_DISCOUNT)
+                                                        }, void 0, false, {
+                                                            fileName: "components/Desktop1/index.jsx",
+                                                            lineNumber: 229,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "register-now manrope-normal-silver-10px",
+                                                            children: registerNow
+                                                        }, void 0, false, {
+                                                            fileName: "components/Desktop1/index.jsx",
+                                                            lineNumber: 230,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "components/Desktop1/index.jsx",
+                                                    lineNumber: 227,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "components/Desktop1/index.jsx",
+                                                lineNumber: 226,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "components/Desktop1/index.jsx",
+                                        lineNumber: 224,
+                                        columnNumber: 68
+                                    }, this),
+                                    clientInfo?.response?.Weather_conditions === "snowy" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "group-container-1",
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                 className: "group-17-1"
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 184,
+                                                lineNumber: 235,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                 className: "group-17",
                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: "overlap-group",
+                                                    className: "overlap-group overlap-group-recommendation",
                                                     children: [
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                             className: "rectangle-1"
                                                         }, void 0, false, {
                                                             fileName: "components/Desktop1/index.jsx",
-                                                            lineNumber: 187,
+                                                            lineNumber: 238,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9801,7 +10126,7 @@ function Desktop1(props) {
                                                             children: getHeatedSeating
                                                         }, void 0, false, {
                                                             fileName: "components/Desktop1/index.jsx",
-                                                            lineNumber: 188,
+                                                            lineNumber: 239,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -9809,55 +10134,60 @@ function Desktop1(props) {
                                                             children: availADiscountNow
                                                         }, void 0, false, {
                                                             fileName: "components/Desktop1/index.jsx",
-                                                            lineNumber: 189,
+                                                            lineNumber: 240,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "components/Desktop1/index.jsx",
-                                                    lineNumber: 186,
+                                                    lineNumber: 237,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "components/Desktop1/index.jsx",
-                                                lineNumber: 185,
+                                                lineNumber: 236,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/Desktop1/index.jsx",
-                                        lineNumber: 183,
-                                        columnNumber: 15
+                                        lineNumber: 234,
+                                        columnNumber: 72
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Desktop1/index.jsx",
-                                lineNumber: 163,
+                                lineNumber: 204,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "components/Desktop1/index.jsx",
-                        lineNumber: 97,
+                        lineNumber: 113,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/Desktop1/index.jsx",
-                lineNumber: 65,
+                lineNumber: 81,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "components/Desktop1/index.jsx",
-            lineNumber: 64,
+            lineNumber: 80,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "components/Desktop1/index.jsx",
-        lineNumber: 63,
+        lineNumber: 79,
         columnNumber: 5
     }, this);
 }
+_s(Desktop1, "9cZfZ04734qoCGIctmKX7+sX6eU=", false, function() {
+    return [
+        (0, _reactRouterDom.useHistory)
+    ];
+});
 _c = Desktop1;
 exports.default = Desktop1;
 var _c;
@@ -9868,7 +10198,7 @@ $RefreshReg$(_c, "Desktop1");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Vuesaxboldelement3":"lofp2","../Vuesaxlinearlogin":"j1Qv6","../Vuesaxlinearnotification":"fNPtM","./Desktop1.css":"75n5s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lofp2":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Vuesaxboldelement3":"lofp2","../Vuesaxlinearlogin":"j1Qv6","../Vuesaxlinearnotification":"fNPtM","./Desktop1.css":"75n5s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Rainy":"6Trab","../Snowy":"4gOBS","react-router-dom":"cHIiW","../Frame1":"2uxSD"}],"lofp2":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$e177 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -10106,196 +10436,7 @@ $RefreshReg$(_c, "Vuesaxlinearnotification");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Vuesaxlinearnotification.css":"iA7mV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iA7mV":[function() {},{}],"75n5s":[function() {},{}],"jNdQr":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$57e1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$57e1.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _hipHopCss = require("./HipHop.css");
-function HipHop(props) {
-    const { youListenedTo , viewPlaylist , title , maskGroup , className  } = props;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container-center-horizontal",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: `classical screen ${className || ""}`,
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "overlap-group-1",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "you-listened-to-1 poppins-medium-cararra-15px",
-                        children: youListenedTo
-                    }, void 0, false, {
-                        fileName: "components/HipHop/index.jsx",
-                        lineNumber: 11,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "view-playlist-1 poppins-medium-cararra-15px",
-                        children: viewPlaylist
-                    }, void 0, false, {
-                        fileName: "components/HipHop/index.jsx",
-                        lineNumber: 12,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: "title-1 jost-extra-bold-white-45px",
-                        children: title
-                    }, void 0, false, {
-                        fileName: "components/HipHop/index.jsx",
-                        lineNumber: 13,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "mask-group-1",
-                        src: maskGroup,
-                        alt: "Mask group"
-                    }, void 0, false, {
-                        fileName: "components/HipHop/index.jsx",
-                        lineNumber: 14,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "rectangle-42"
-                    }, void 0, false, {
-                        fileName: "components/HipHop/index.jsx",
-                        lineNumber: 15,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "components/HipHop/index.jsx",
-                lineNumber: 10,
-                columnNumber: 9
-            }, this)
-        }, void 0, false, {
-            fileName: "components/HipHop/index.jsx",
-            lineNumber: 9,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "components/HipHop/index.jsx",
-        lineNumber: 8,
-        columnNumber: 5
-    }, this);
-}
-_c = HipHop;
-exports.default = HipHop;
-var _c;
-$RefreshReg$(_c, "HipHop");
-
-  $parcel$ReactRefreshHelpers$57e1.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./HipHop.css":"5zd8O","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5zd8O":[function() {},{}],"16SYd":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$8cf7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8cf7.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _rockCss = require("./Rock.css");
-function Rock(props) {
-    const { youListenedTo , place , viewPlaylist , maskGroup , className  } = props;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container-center-horizontal",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: `pop-1 screen ${className || ""}`,
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "overlap-group1",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "you-listened-to-3 poppins-medium-cararra-15px",
-                            children: youListenedTo
-                        }, void 0, false, {
-                            fileName: "components/Rock/index.jsx",
-                            lineNumber: 11,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            className: "title-2 jost-extra-bold-white-45px",
-                            children: place
-                        }, void 0, false, {
-                            fileName: "components/Rock/index.jsx",
-                            lineNumber: 12,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "components/Rock/index.jsx",
-                    lineNumber: 10,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "overlap-group-3",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "view-playlist-3 poppins-medium-cararra-15px",
-                            children: viewPlaylist
-                        }, void 0, false, {
-                            fileName: "components/Rock/index.jsx",
-                            lineNumber: 15,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "mask-group-3",
-                            src: maskGroup,
-                            alt: "Mask group"
-                        }, void 0, false, {
-                            fileName: "components/Rock/index.jsx",
-                            lineNumber: 16,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "rectangle-40-1"
-                        }, void 0, false, {
-                            fileName: "components/Rock/index.jsx",
-                            lineNumber: 17,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "components/Rock/index.jsx",
-                    lineNumber: 14,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "components/Rock/index.jsx",
-            lineNumber: 9,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "components/Rock/index.jsx",
-        lineNumber: 8,
-        columnNumber: 5
-    }, this);
-}
-_c = Rock;
-exports.default = Rock;
-var _c;
-$RefreshReg$(_c, "Rock");
-
-  $parcel$ReactRefreshHelpers$8cf7.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Rock.css":"c3XL5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"c3XL5":[function() {},{}],"6Trab":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Vuesaxlinearnotification.css":"iA7mV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iA7mV":[function() {},{}],"75n5s":[function() {},{}],"6Trab":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bb42 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -10315,17 +10456,17 @@ function Rainy(props) {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "rainy screen",
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "overlap-group1-3",
+                className: "overlap-group1-rainy",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "group-169",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "group-167",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "overlap-group-6",
+                                className: "overlap-group-rainy",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-2 jost-extra-bold-white-45px",
+                                        className: "text-1-rainy",
                                         children: text1
                                     }, void 0, false, {
                                         fileName: "components/Rainy/index.jsx",
@@ -10333,7 +10474,7 @@ function Rainy(props) {
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "rainy-1 poppins-medium-cararra-15px",
+                                        className: "rainy-1",
                                         children: rainy
                                     }, void 0, false, {
                                         fileName: "components/Rainy/index.jsx",
@@ -10605,7 +10746,196 @@ $RefreshReg$(_c, "Frame1");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Frame1.css":"3yAp6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3yAp6":[function() {},{}],"fecnP":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Frame1.css":"3yAp6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3yAp6":[function() {},{}],"jNdQr":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$57e1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$57e1.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _hipHopCss = require("./HipHop.css");
+function HipHop(props) {
+    const { youListenedTo , viewPlaylist , title , maskGroup , className  } = props;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "container-center-horizontal",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: `classical screen ${className || ""}`,
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "overlap-group-1",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "you-listened-to-1 poppins-medium-cararra-15px",
+                        children: youListenedTo
+                    }, void 0, false, {
+                        fileName: "components/HipHop/index.jsx",
+                        lineNumber: 11,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "view-playlist-1 poppins-medium-cararra-15px",
+                        children: viewPlaylist
+                    }, void 0, false, {
+                        fileName: "components/HipHop/index.jsx",
+                        lineNumber: 12,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "title-1 jost-extra-bold-white-45px",
+                        children: title
+                    }, void 0, false, {
+                        fileName: "components/HipHop/index.jsx",
+                        lineNumber: 13,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "mask-group-1",
+                        src: maskGroup,
+                        alt: "Mask group"
+                    }, void 0, false, {
+                        fileName: "components/HipHop/index.jsx",
+                        lineNumber: 14,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "rectangle-42"
+                    }, void 0, false, {
+                        fileName: "components/HipHop/index.jsx",
+                        lineNumber: 15,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "components/HipHop/index.jsx",
+                lineNumber: 10,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "components/HipHop/index.jsx",
+            lineNumber: 9,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "components/HipHop/index.jsx",
+        lineNumber: 8,
+        columnNumber: 5
+    }, this);
+}
+_c = HipHop;
+exports.default = HipHop;
+var _c;
+$RefreshReg$(_c, "HipHop");
+
+  $parcel$ReactRefreshHelpers$57e1.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./HipHop.css":"5zd8O","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5zd8O":[function() {},{}],"16SYd":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8cf7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8cf7.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _rockCss = require("./Rock.css");
+function Rock(props) {
+    const { youListenedTo , place , viewPlaylist , maskGroup , className  } = props;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "container-center-horizontal",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: `pop-1 screen ${className || ""}`,
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-group1",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "you-listened-to-3 poppins-medium-cararra-15px",
+                            children: youListenedTo
+                        }, void 0, false, {
+                            fileName: "components/Rock/index.jsx",
+                            lineNumber: 11,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: "title-2 jost-extra-bold-white-45px",
+                            children: place
+                        }, void 0, false, {
+                            fileName: "components/Rock/index.jsx",
+                            lineNumber: 12,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "components/Rock/index.jsx",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-group-3",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "view-playlist-3 poppins-medium-cararra-15px",
+                            children: viewPlaylist
+                        }, void 0, false, {
+                            fileName: "components/Rock/index.jsx",
+                            lineNumber: 15,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "mask-group-3",
+                            src: maskGroup,
+                            alt: "Mask group"
+                        }, void 0, false, {
+                            fileName: "components/Rock/index.jsx",
+                            lineNumber: 16,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "rectangle-40-1"
+                        }, void 0, false, {
+                            fileName: "components/Rock/index.jsx",
+                            lineNumber: 17,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "components/Rock/index.jsx",
+                    lineNumber: 14,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "components/Rock/index.jsx",
+            lineNumber: 9,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "components/Rock/index.jsx",
+        lineNumber: 8,
+        columnNumber: 5
+    }, this);
+}
+_c = Rock;
+exports.default = Rock;
+var _c;
+$RefreshReg$(_c, "Rock");
+
+  $parcel$ReactRefreshHelpers$8cf7.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Rock.css":"c3XL5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"c3XL5":[function() {},{}],"fecnP":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$526f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -10620,10 +10950,11 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _landingPageCss = require("./LandingPage.css");
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 function LandingPage(props) {
     _s();
-    const { overlapGroup1 , rectangle1 , title , overlapGroup , logoShapes7 , mesh08 , customerId , inputType , inputPlaceholder , login  } = props;
+    const { overlapGroup1 , rectangle1 , title , overlapGroup , logoShapes7 , mesh08 , customerId , inputType , inputPlaceholder , login , setClientInfo  } = props;
     const [clientData, setClientData] = (0, _reactDefault.default).useState(null);
     const [clientId, setClientId] = (0, _reactDefault.default).useState(null);
     const baseURL = "https://us-central1-burner-manchoud1.cloudfunctions.net/bbbhackathon";
@@ -10633,8 +10964,15 @@ function LandingPage(props) {
             "Customer_ID": clientId
         }).then((response)=>{
             setClientData(response.data);
+            setClientInfo(response.data);
         });
     };
+    const history = (0, _reactRouterDom.useHistory)();
+    (0, _reactDefault.default).useEffect(()=>{
+        if (clientData) history.push("/desktop-1");
+    }, [
+        clientData
+    ]);
     console.log("clientId", clientId);
     console.log("✅ clientData", clientData);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -10653,7 +10991,7 @@ function LandingPage(props) {
                         alt: "Rectangle 1"
                     }, void 0, false, {
                         fileName: "components/LandingPage/index.jsx",
-                        lineNumber: 44,
+                        lineNumber: 55,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -10661,7 +10999,7 @@ function LandingPage(props) {
                         children: title
                     }, void 0, false, {
                         fileName: "components/LandingPage/index.jsx",
-                        lineNumber: 45,
+                        lineNumber: 56,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -10675,19 +11013,19 @@ function LandingPage(props) {
                             alt: "Logo Shapes 7"
                         }, void 0, false, {
                             fileName: "components/LandingPage/index.jsx",
-                            lineNumber: 47,
+                            lineNumber: 58,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "components/LandingPage/index.jsx",
-                        lineNumber: 46,
+                        lineNumber: 57,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "rectangle-32"
                     }, void 0, false, {
                         fileName: "components/LandingPage/index.jsx",
-                        lineNumber: 49,
+                        lineNumber: 60,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -10696,7 +11034,7 @@ function LandingPage(props) {
                         alt: "Mesh-08"
                     }, void 0, false, {
                         fileName: "components/LandingPage/index.jsx",
-                        lineNumber: 50,
+                        lineNumber: 61,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -10704,7 +11042,7 @@ function LandingPage(props) {
                         children: customerId
                     }, void 0, false, {
                         fileName: "components/LandingPage/index.jsx",
-                        lineNumber: 51,
+                        lineNumber: 62,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -10716,7 +11054,7 @@ function LandingPage(props) {
                         required: true
                     }, void 0, false, {
                         fileName: "components/LandingPage/index.jsx",
-                        lineNumber: 52,
+                        lineNumber: 63,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -10725,27 +11063,31 @@ function LandingPage(props) {
                         children: login
                     }, void 0, false, {
                         fileName: "components/LandingPage/index.jsx",
-                        lineNumber: 53,
+                        lineNumber: 64,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/LandingPage/index.jsx",
-                lineNumber: 43,
+                lineNumber: 54,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "components/LandingPage/index.jsx",
-            lineNumber: 42,
+            lineNumber: 53,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "components/LandingPage/index.jsx",
-        lineNumber: 41,
+        lineNumber: 52,
         columnNumber: 5
     }, this);
 }
-_s(LandingPage, "bi30aIwyGkcO4xVy16N73eUgrHw=");
+_s(LandingPage, "7o76PYLWA44oZAIaiOun6bdR6LM=", false, function() {
+    return [
+        (0, _reactRouterDom.useHistory)
+    ];
+});
 _c = LandingPage;
 exports.default = LandingPage;
 var _c;
@@ -10756,7 +11098,7 @@ $RefreshReg$(_c, "LandingPage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./LandingPage.css":"7iFCK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","axios":"jo6P5"}],"7iFCK":[function() {},{}],"jo6P5":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./LandingPage.css":"7iFCK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","axios":"jo6P5","react-router-dom":"cHIiW"}],"7iFCK":[function() {},{}],"jo6P5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>(0, _axiosJsDefault.default));
@@ -14874,7 +15216,466 @@ Object.entries(HttpStatusCode).forEach(([key, value])=>{
 });
 exports.default = HttpStatusCode;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"j6uA9":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hU6zk":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$52fb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$52fb.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _vuesaxboldelement3 = require("../Vuesaxboldelement3");
+var _vuesaxboldelement3Default = parcelHelpers.interopDefault(_vuesaxboldelement3);
+var _vuesaxlinearlogin = require("../Vuesaxlinearlogin");
+var _vuesaxlinearloginDefault = parcelHelpers.interopDefault(_vuesaxlinearlogin);
+var _vuesaxlinearnotification = require("../Vuesaxlinearnotification");
+var _vuesaxlinearnotificationDefault = parcelHelpers.interopDefault(_vuesaxlinearnotification);
+var _statsCss = require("./Stats.css");
+var _rainy = require("../Rainy");
+var _rainyDefault = parcelHelpers.interopDefault(_rainy);
+var _snowy = require("../Snowy");
+var _snowyDefault = parcelHelpers.interopDefault(_snowy);
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+function Stats(props) {
+    _s();
+    const { overlapGroup4 , logoShapes7 , roadwhiz , overview , group , store , statistics , iconFolder , courses , text , overlapGroup5 , title , welcomeBackCustom , mesh08 , yourLastTripToEndingLocation , betterThan86OfDrivers , i , spanText1 , spanText2 , spanText3 , spanText4 , spanText5 , spanText6 , spanText7 , spanText8 , spanText9 , spanText10 , surname , text1 , snowCloud , rainyDay , clearDay , distance , fuelConsumption , timeSpent , overlapGroup10 , routeTaken , youListenedTo , viewPlaylist , pop , maskGroup , ellipse2 , line1 , recommendations , insurancePercent , registerNow , getHeatedSeating , availADiscountNow , vuesaxboldelement3Props , clientInfo , setClientInfo  } = props;
+    console.log("DESKTOP PROPS", clientInfo);
+    const history = (0, _reactRouterDom.useHistory)();
+    const backToHomepage = ()=>{
+        history.push("/");
+        setClientInfo(null);
+    };
+    const backToOverview = ()=>{
+        history.push("/desktop-1");
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "container-center-horizontal",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "desktop-1 screen",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "overlap-group4",
+                style: {
+                    backgroundImage: `url(${overlapGroup4})`
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex-col",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "flex-row",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "flex-col-1",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "logo-shapes-7",
+                                                src: logoShapes7,
+                                                alt: "Logo Shapes 7"
+                                            }, void 0, false, {
+                                                fileName: "components/Stats/index.jsx",
+                                                lineNumber: 85,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _vuesaxboldelement3Default.default), {}, void 0, false, {
+                                                fileName: "components/Stats/index.jsx",
+                                                lineNumber: 86,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "components/Stats/index.jsx",
+                                        lineNumber: 84,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "flex-col-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "road-whiz",
+                                                onClick: backToOverview,
+                                                children: roadwhiz
+                                            }, void 0, false, {
+                                                fileName: "components/Stats/index.jsx",
+                                                lineNumber: 89,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "overview",
+                                                onClick: backToOverview,
+                                                children: overview
+                                            }, void 0, false, {
+                                                fileName: "components/Stats/index.jsx",
+                                                lineNumber: 90,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "components/Stats/index.jsx",
+                                        lineNumber: 88,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "components/Stats/index.jsx",
+                                lineNumber: 83,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "group-173",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "group",
+                                        src: group,
+                                        alt: "Group"
+                                    }, void 0, false, {
+                                        fileName: "components/Stats/index.jsx",
+                                        lineNumber: 94,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "store",
+                                        children: store
+                                    }, void 0, false, {
+                                        fileName: "components/Stats/index.jsx",
+                                        lineNumber: 95,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "components/Stats/index.jsx",
+                                lineNumber: 93,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "group-174",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _vuesaxboldelement3Default.default), {
+                                        className: vuesaxboldelement3Props.className
+                                    }, void 0, false, {
+                                        fileName: "components/Stats/index.jsx",
+                                        lineNumber: 98,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "statistics poppins-medium-black-16px",
+                                        children: statistics
+                                    }, void 0, false, {
+                                        fileName: "components/Stats/index.jsx",
+                                        lineNumber: 99,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "components/Stats/index.jsx",
+                                lineNumber: 97,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-group6",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "group-175",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "icon-folder",
+                                                src: iconFolder,
+                                                alt: "icon-folder"
+                                            }, void 0, false, {
+                                                fileName: "components/Stats/index.jsx",
+                                                lineNumber: 103,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "courses poppins-medium-black-16px",
+                                                children: courses
+                                            }, void 0, false, {
+                                                fileName: "components/Stats/index.jsx",
+                                                lineNumber: 104,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "components/Stats/index.jsx",
+                                        lineNumber: 102,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text poppins-medium-black-16px",
+                                        children: text
+                                    }, void 0, false, {
+                                        fileName: "components/Stats/index.jsx",
+                                        lineNumber: 106,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "components/Stats/index.jsx",
+                                lineNumber: 101,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "group-176",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _vuesaxlinearloginDefault.default), {}, void 0, false, {
+                                        fileName: "components/Stats/index.jsx",
+                                        lineNumber: 109,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "log-out poppins-medium-black-16px",
+                                        onClick: backToHomepage,
+                                        children: "log Out"
+                                    }, void 0, false, {
+                                        fileName: "components/Stats/index.jsx",
+                                        lineNumber: 110,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "components/Stats/index.jsx",
+                                lineNumber: 108,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/Stats/index.jsx",
+                        lineNumber: 82,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "overlap-group5",
+                        style: {
+                            backgroundImage: `url(${overlapGroup5})`
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("iframe", {
+                                width: "100%",
+                                height: "90%",
+                                src: "https://lookerstudio.google.com/embed/reporting/48b408fa-c17b-47d9-8bfe-fd07668076ba/page/p_u1lvwfzk4c",
+                                allowfullscreen: true
+                            }, void 0, false, {
+                                fileName: "components/Stats/index.jsx",
+                                lineNumber: 114,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-group8",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "ellipse-2",
+                                        src: ellipse2,
+                                        alt: "Ellipse 2"
+                                    }, void 0, false, {
+                                        fileName: "components/Stats/index.jsx",
+                                        lineNumber: 116,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "cust0001 valign-text-middle",
+                                        children: clientInfo?.response?.Customer_ID
+                                    }, void 0, false, {
+                                        fileName: "components/Stats/index.jsx",
+                                        lineNumber: 117,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "line-1",
+                                        src: line1,
+                                        alt: "Line 1"
+                                    }, void 0, false, {
+                                        fileName: "components/Stats/index.jsx",
+                                        lineNumber: 118,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "flex-row-1",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "recommendations",
+                                                children: recommendations
+                                            }, void 0, false, {
+                                                fileName: "components/Stats/index.jsx",
+                                                lineNumber: 120,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "notif",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _vuesaxlinearnotificationDefault.default), {}, void 0, false, {
+                                                    fileName: "components/Stats/index.jsx",
+                                                    lineNumber: 122,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "components/Stats/index.jsx",
+                                                lineNumber: 121,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "components/Stats/index.jsx",
+                                        lineNumber: 119,
+                                        columnNumber: 15
+                                    }, this),
+                                    clientInfo?.response?.INSURANCE_PREMIUM_DISCOUNT && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "group-container",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "group-15"
+                                            }, void 0, false, {
+                                                fileName: "components/Stats/index.jsx",
+                                                lineNumber: 126,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "group-17",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "overlap-group",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "rectangle-1"
+                                                        }, void 0, false, {
+                                                            fileName: "components/Stats/index.jsx",
+                                                            lineNumber: 129,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                            className: "you-have-availed-25 manrope-bold-mine-shaft-10px",
+                                                            children: insurancePercent.replace("[insurancePercent]", clientInfo?.response?.INSURANCE_PREMIUM_DISCOUNT)
+                                                        }, void 0, false, {
+                                                            fileName: "components/Stats/index.jsx",
+                                                            lineNumber: 130,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "register-now manrope-normal-silver-10px",
+                                                            children: registerNow
+                                                        }, void 0, false, {
+                                                            fileName: "components/Stats/index.jsx",
+                                                            lineNumber: 131,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "components/Stats/index.jsx",
+                                                    lineNumber: 128,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "components/Stats/index.jsx",
+                                                lineNumber: 127,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "components/Stats/index.jsx",
+                                        lineNumber: 125,
+                                        columnNumber: 68
+                                    }, this),
+                                    clientInfo?.response?.Weather_conditions === "snowy" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "group-container-1",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "group-17-1"
+                                            }, void 0, false, {
+                                                fileName: "components/Stats/index.jsx",
+                                                lineNumber: 136,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "group-17",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "overlap-group",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "rectangle-1"
+                                                        }, void 0, false, {
+                                                            fileName: "components/Stats/index.jsx",
+                                                            lineNumber: 139,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "get-heated-seating manrope-bold-mine-shaft-10px",
+                                                            children: getHeatedSeating
+                                                        }, void 0, false, {
+                                                            fileName: "components/Stats/index.jsx",
+                                                            lineNumber: 140,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "avail-a-discount-now manrope-normal-silver-10px",
+                                                            children: availADiscountNow
+                                                        }, void 0, false, {
+                                                            fileName: "components/Stats/index.jsx",
+                                                            lineNumber: 141,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "components/Stats/index.jsx",
+                                                    lineNumber: 138,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "components/Stats/index.jsx",
+                                                lineNumber: 137,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "components/Stats/index.jsx",
+                                        lineNumber: 135,
+                                        columnNumber: 72
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "components/Stats/index.jsx",
+                                lineNumber: 115,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/Stats/index.jsx",
+                        lineNumber: 113,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "components/Stats/index.jsx",
+                lineNumber: 81,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "components/Stats/index.jsx",
+            lineNumber: 80,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "components/Stats/index.jsx",
+        lineNumber: 79,
+        columnNumber: 5
+    }, this);
+}
+_s(Stats, "9cZfZ04734qoCGIctmKX7+sX6eU=", false, function() {
+    return [
+        (0, _reactRouterDom.useHistory)
+    ];
+});
+_c = Stats;
+exports.default = Stats;
+var _c;
+$RefreshReg$(_c, "Stats");
+
+  $parcel$ReactRefreshHelpers$52fb.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Vuesaxboldelement3":"lofp2","../Vuesaxlinearlogin":"j1Qv6","../Vuesaxlinearnotification":"fNPtM","./Stats.css":"212dz","../Rainy":"6Trab","../Snowy":"4gOBS","react-router-dom":"cHIiW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"212dz":[function() {},{}],"j6uA9":[function(require,module,exports) {
 "use strict";
 function checkDCE() {
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") return;

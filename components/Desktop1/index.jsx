@@ -6,7 +6,7 @@ import "./Desktop1.css";
 import Rainy from "../Rainy";
 import Snowy from "../Snowy";
 import { useHistory } from "react-router-dom";
-// import { HipHop } from '../HipHop';
+import Frame1 from "../Frame1";
 
 function Desktop1(props) {
   const {
@@ -25,11 +25,10 @@ function Desktop1(props) {
     title,
     welcomeBackCustom,
     mesh08,
-    yourLastTripToEndingLocation,
     betterThan86OfDrivers,
     i,
     spanText1,
-    spanText2,
+
     spanText3,
     spanText4,
     spanText5,
@@ -40,8 +39,6 @@ function Desktop1(props) {
     spanText10,
     surname,
     text1,
-    snowCloud,
-    rainyDay,
     clearDay,
     distance,
     fuelConsumption,
@@ -63,8 +60,6 @@ function Desktop1(props) {
     clientInfo,
     setClientInfo
   } = props;
-
-  console.log("DESKTOP PROPS", clientInfo)
 
   const history = useHistory();
   const backToHomepage = () => {
@@ -132,7 +127,7 @@ function Desktop1(props) {
                   <div className="rectangle-35"></div>
                   <div className="rectangle-39"></div>
                   <div className="rectangle-36"></div>
-                  <div className="overlap-group2">
+                  <div className="overlap-group2 info-icon">
                     <div className="i">{i}</div>
                     <div className="ellipse-44"></div>
                   </div>
@@ -168,12 +163,11 @@ function Desktop1(props) {
                   </div>
 
                   <div className="overlap-group3-weather">
-                    <div className="rectangle-31"></div>
                     <div className="surname poppins-medium-cararra-15px">{surname}</div>
                     <div className="text-1 jost-extra-bold-white-45px">{text1}</div>
-                    {clientInfo?.response?.Weather_conditions === snowCloud && <Snowy surname="Snow Shower" text1="-10°" snowCloud="/img/snow-cloud@2x.png" />}
-                    {clientInfo?.response?.Weather_conditions === rainyDay && <Rainy text1="9°" rainy="Rainy" rainCloud="/img/rain-cloud@2x.png" />}
-                    {clientInfo?.response?.Weather_conditions === clearDay && <img className="clear" src={clearDay} alt="Clear day" />}
+                    {clientInfo?.response?.Weather_conditions === 'snowy' && <Snowy surname="Snow Shower" text1="-10°" snowCloud="/img/snow-cloud@2x.png" />}
+                    {clientInfo?.response?.Weather_conditions === 'rainy' && <Rainy text1="9°" rainy="Rainy" rainCloud="/img/rain-cloud@2x.png" />}
+                    {clientInfo?.response?.Weather_conditions === 'clear' && <Frame1 text1="12°" sunny="Sunny" />}
                   </div>
 
                 </div>
@@ -187,20 +181,24 @@ function Desktop1(props) {
                 </div>
               </div>
               <div className="overlap-group9">
-                {/* {clientInfo?.response?.GENRE === 'hip-hop' && <HipHop
-                  youListenedTo="You listened to"
-                  viewPlaylist="View Playlist"
-                  title="Hip-Hop"
-                  maskGroup="/img/mask-group.png"
-                  className="hiphop"
-                />} */}
-
                 <div className="rectangle-41"></div>
                 <div className="you-listened-to poppins-medium-cararra-15px">{youListenedTo}</div>
                 <div className="view-playlist poppins-medium-cararra-15px">{viewPlaylist}</div>
-                <div className="pop jost-extra-bold-white-45px">{pop}</div>
-                <img className="mask-group" src={maskGroup} alt="Mask group" />
-                <div className="rectangle-40"></div>
+                {clientInfo?.response?.GENRE === 'hip-hop' && (<><div className="pop jost-extra-bold-white-45px">Hip Hop</div>
+                  <img className="mask-group" src="/img/mask-group-hiphop.png" alt="Mask group" />
+                  <div className="rectangle-40"></div></>)}
+                {clientInfo?.response?.GENRE === 'pop' && (<><div className="pop jost-extra-bold-white-45px">POP</div>
+                  <img className="mask-group" src="/img/mask-group-pop.png" alt="Mask group" />
+                  <div className="rectangle-40"></div></>)}
+                {clientInfo?.response?.GENRE === 'rock' && (<><div className="pop jost-extra-bold-white-45px">ROCK</div>
+                  <img className="mask-group" src="/img/mask-group-rock.png" alt="Mask group" />
+                  <div className="rectangle-40"></div></>)}
+                {clientInfo?.response?.GENRE === 'jazz' && (<><div className="pop jost-extra-bold-white-45px">JAZZ</div>
+                  <img className="mask-group" src="/img/mask-group-jazz.png" alt="Mask group" />
+                  <div className="rectangle-40"></div></>)}
+                {clientInfo?.response?.GENRE === 'classical' && (<><div className="pop jost-extra-bold-white-45px">CLASSICAL</div>
+                  <img className="mask-group" src="/img/mask-group-classical.png" alt="Mask group" />
+                  <div className="rectangle-40"></div></>)}
               </div>
             </div>
             <div className="overlap-group8">
@@ -213,20 +211,30 @@ function Desktop1(props) {
                   <Vuesaxlinearnotification />
                 </div>
               </div>
-              {clientInfo?.response?.INSURANCE_PREMIUM_DISCOUNT && <div className="group-container">
+              <div className="group-container-desktop">
                 <div className="group-15"></div>
                 <div className="group-17">
-                  <div className="overlap-group">
+                  <div className="overlap-group overlap-group-recommendation">
+                    <div className="rectangle-1"></div>
+                    <p className="you-have-availed-25 manrope-bold-mine-shaft-10px">{insurancePercent.replace('[insurancePercent]', '10%')}</p>
+                    <div className="register-now manrope-normal-silver-10px">{registerNow}</div>
+                  </div>
+                </div>
+              </div>
+              {clientInfo?.response?.INSURANCE_PREMIUM_DISCOUNT && <div className="group-container-desktop">
+                <div className="group-15"></div>
+                <div className="group-17">
+                  <div className="overlap-group overlap-group-recommendation">
                     <div className="rectangle-1"></div>
                     <p className="you-have-availed-25 manrope-bold-mine-shaft-10px">{insurancePercent.replace('[insurancePercent]', clientInfo?.response?.INSURANCE_PREMIUM_DISCOUNT)}</p>
                     <div className="register-now manrope-normal-silver-10px">{registerNow}</div>
                   </div>
                 </div>
               </div>}
-              {clientInfo?.response?.Weather_conditions === snowCloud && <div className="group-container-1">
+              {clientInfo?.response?.Weather_conditions === 'snowy' && <div className="group-container-1">
                 <div className="group-17-1"></div>
                 <div className="group-17">
-                  <div className="overlap-group">
+                  <div className="overlap-group overlap-group-recommendation">
                     <div className="rectangle-1"></div>
                     <div className="get-heated-seating manrope-bold-mine-shaft-10px">{getHeatedSeating}</div>
                     <div className="avail-a-discount-now manrope-normal-silver-10px">{availADiscountNow}</div>
