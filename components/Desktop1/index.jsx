@@ -74,6 +74,13 @@ function Desktop1(props) {
   const goToStatisticsPage = () => {
     history.push("/stats");
   }
+  const goToCoursesPage = () => {
+    history.push("/courses");
+  }
+
+  const goToStorePage = () => {
+    history.push("/store");
+  }
 
   return (
     <div className="container-center-horizontal">
@@ -92,7 +99,7 @@ function Desktop1(props) {
             </div>
             <div className="group-173">
               <img className="group" src={group} alt="Group" />
-              <div className="store">{store}</div>
+              <div className="store" onClick={goToStorePage}>{store}</div>
             </div>
             <div className="group-174">
               <Vuesaxboldelement3 className={vuesaxboldelement3Props.className} />
@@ -101,7 +108,7 @@ function Desktop1(props) {
             <div className="overlap-group6">
               <div className="group-175">
                 <img className="icon-folder" src={iconFolder} alt="icon-folder" />
-                <div className="courses poppins-medium-black-16px">{courses}</div>
+                <div className="courses poppins-medium-black-16px" onClick={goToCoursesPage}>{courses}</div>
               </div>
               <div className="text poppins-medium-black-16px">{text}</div>
             </div>
