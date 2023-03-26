@@ -16,7 +16,7 @@ function App() {
     <Router>
       <Switch>
         <Route path="/desktop-1">
-          <Desktop1 {...desktop1Data} clientInfo={clientInfo} />
+          <Desktop1 {...desktop1Data} clientInfo={clientInfo} setClientInfo={setClientInfo} />
         </Route>
         <Route path="/classical">
           <HipHop
@@ -96,8 +96,7 @@ const desktop1Data = {
     statistics: "Statistics",
     iconFolder: "/img/vuesax-linear-folder-2@2x.png",
     courses: "Courses",
-    text: "",
-    logOut: "Log out",
+  text: "",
     overlapGroup5: "/img/rectangle-1.png",
     title: "Overview",
   welcomeBackCustom: "Welcome back, [CustomerID]! Here is your last ride details",

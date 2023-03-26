@@ -5,7 +5,7 @@ import Vuesaxlinearnotification from "../Vuesaxlinearnotification";
 import "./Desktop1.css";
 import Rainy from "../Rainy";
 import Snowy from "../Snowy";
-
+import { useHistory } from "react-router-dom";
 
 function Desktop1(props) {
   const {
@@ -19,7 +19,7 @@ function Desktop1(props) {
     iconFolder,
     courses,
     text,
-    logOut,
+
     overlapGroup5,
     title,
     welcomeBackCustom,
@@ -59,10 +59,17 @@ function Desktop1(props) {
     getHeatedSeating,
     availADiscountNow,
     vuesaxboldelement3Props,
-    clientInfo
+    clientInfo,
+    setClientInfo
   } = props;
 
   console.log("DESKTOP PROPS", clientInfo)
+
+  const history = useHistory();
+  const backToHomepage = () => {
+    history.push("/");
+    setClientInfo(null);
+  }
 
   return (
     <div className="container-center-horizontal">
@@ -96,7 +103,7 @@ function Desktop1(props) {
             </div>
             <div className="group-176">
               <Vuesaxlinearlogin />
-              <div className="log-out poppins-medium-black-16px">{logOut}</div>
+              <div className="log-out poppins-medium-black-16px" onClick={backToHomepage}>log Out</div>
             </div>
           </div>
           <div className="overlap-group5" style={{ backgroundImage: `url(${overlapGroup5})` }}>
