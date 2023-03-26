@@ -24,7 +24,6 @@ function Desktop1(props) {
     title,
     welcomeBackCustom,
     mesh08,
-
     yourLastTripToEndingLocation,
     betterThan86OfDrivers,
     i,
@@ -46,7 +45,6 @@ function Desktop1(props) {
     distance,
     fuelConsumption,
     timeSpent,
-    trafficCondition,
     overlapGroup10,
     routeTaken,
     youListenedTo,
@@ -54,10 +52,9 @@ function Desktop1(props) {
     pop,
     maskGroup,
     ellipse2,
-    cust0001,
     line1,
     recommendations,
-    youHaveAvailed25,
+    insurancePercent,
     registerNow,
     getHeatedSeating,
     availADiscountNow,
@@ -174,7 +171,7 @@ function Desktop1(props) {
             </div>
             <div className="overlap-group8">
               <img className="ellipse-2" src={ellipse2} alt="Ellipse 2" />
-              <div className="cust0001 valign-text-middle">{cust0001}</div>
+              <div className="cust0001 valign-text-middle">{clientInfo?.response?.Customer_ID}</div>
               <img className="line-1" src={line1} alt="Line 1" />
               <div className="flex-row-1">
                 <div className="recommendations">{recommendations}</div>
@@ -182,16 +179,16 @@ function Desktop1(props) {
                   <Vuesaxlinearnotification />
                 </div>
               </div>
-              <div className="group-container">
+              {clientInfo?.response?.INSURANCE_PREMIUM_DISCOUNT && <div className="group-container">
                 <div className="group-15"></div>
                 <div className="group-17">
                   <div className="overlap-group">
                     <div className="rectangle-1"></div>
-                    <p className="you-have-availed-25 manrope-bold-mine-shaft-10px">{youHaveAvailed25}</p>
+                    <p className="you-have-availed-25 manrope-bold-mine-shaft-10px">{insurancePercent.replace('[insurancePercent]', clientInfo?.response?.INSURANCE_PREMIUM_DISCOUNT)}</p>
                     <div className="register-now manrope-normal-silver-10px">{registerNow}</div>
                   </div>
                 </div>
-              </div>
+              </div>}
               <div className="group-container-1">
                 <div className="group-17-1"></div>
                 <div className="group-17">
