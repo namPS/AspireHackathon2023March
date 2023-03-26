@@ -1,0 +1,396 @@
+.container-center-horizontal-store {
+  pointer-events: none;
+  width: 26%;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+}
+
+.store {
+  align-items: flex-start;
+  background-color: #efefef;
+  border: 1px none;
+  display: flex;
+  width: 1528px;
+}
+
+.overlap-group7-store {
+  align-items: center;
+  background-size: 100% 100%;
+  display: flex;
+  gap: 46px;
+  height: 1024px;
+  justify-content: flex-end;
+  min-width: 1528px;
+  padding: 0 28px;
+}
+
+.flex-col-store {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: 33.0px;
+  min-height: 851px;
+  width: 199px;
+}
+
+.group-178-store {
+  align-items: center;
+  display: flex;
+  gap: 26px;
+  height: 38px;
+  margin-left: 2px;
+  min-width: 197px;
+}
+
+.logo-shapes-7-store {
+  height: 32px;
+  width: 39px;
+}
+
+.road-whiz {
+  color: #121212;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 38px;
+  min-width: 130px;
+}
+
+.group-177 {
+  cursor: pointer;
+  display: flex;
+  gap: 22px;
+  margin-top: 107px;
+  transition: all 0.2s ease;
+  width: 123px;
+}
+
+.group-177:hover,
+.group-174:hover,
+.group-175:hover,
+.group-2282:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+}
+
+.vuesaxboldelement-3-store,
+.icon-bar_chart,
+.icon-folder {
+  height: 24px;
+  width: 24px;
+}
+
+.overview-store {
+  color: #292d32;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  height: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  width: 75px;
+}
+
+.store-1 {
+  align-self: center;
+  color: #3c652f;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-right: 65.0px;
+  margin-top: 54px;
+  min-height: 24px;
+  min-width: 42px;
+}
+
+.group-174-store {
+  cursor: pointer;
+  display: flex;
+  gap: 22px;
+  margin-top: 55px;
+  transition: all 0.2s ease;
+  width: 122px;
+}
+
+.statistics-store {
+  height: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  width: 74px;
+}
+
+.overlap-group9-store {
+  height: 47px;
+  margin-top: 47px;
+  position: relative;
+  width: 115px;
+}
+
+.group-175-store {
+  cursor: pointer;
+  display: flex;
+  gap: 22px;
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+  width: 115px;
+}
+
+.courses-store {
+  height: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  width: 67px;
+}
+
+.text-store {
+  left: 46px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 23px;
+}
+
+.group-2282 {
+  cursor: pointer;
+  display: flex;
+  gap: 15px;
+  margin-left: 20px;
+  margin-top: 400px;
+  transition: all 0.2s ease;
+  width: 107px;
+}
+
+.vuesaxlinearlogin-store {
+  height: 31px;
+  width: 31px;
+}
+
+.log-out-store {
+  height: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: 2px;
+  width: 59px;
+}
+
+.overlap-group8-store {
+  align-items: flex-start;
+  align-self: flex-end;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 993px;
+  padding: 31px 52px;
+  width: 1225px;
+}
+
+.title {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxl);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 72px;
+}
+
+.your-personalised-st {
+  color: #979ca5;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 1px;
+  margin-top: 1px;
+  min-height: 23px;
+}
+
+.overlap-group-container-store {
+  align-items: flex-start;
+  display: flex;
+  gap: 31px;
+  height: 242px;
+  margin-left: 1px;
+  margin-top: 76px;
+  min-width: 977px;
+}
+
+.overlap-group-store {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  min-height: 242px;
+  padding: 14px 0;
+  width: 305px;
+}
+
+.image {
+  height: 120px;
+  margin-top: 16px;
+  object-fit: cover;
+  width: 259px;
+}
+
+.flex-row-store {
+  align-items: center;
+  display: flex;
+  gap: 54px;
+  height: 56px;
+  min-width: 259px;
+}
+
+.flex-col-1-store {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 56px;
+  width: 113px;
+}
+
+.audio-systems,
+.price,
+.navigation-system,
+.price-1,
+.usb-charging-port,
+.price-2,
+.sun-roof,
+.price-3,
+.item-name,
+.price-4,
+.parking-assist,
+.price-5 {
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 23px;
+}
+
+.overlap-group-1-store {
+  align-items: center;
+  background-color: var(--tahuna-sands);
+  border-radius: 15px;
+  display: flex;
+  height: 43px;
+  margin-top: 1.0px;
+  min-width: 92px;
+  padding: 0 32px;
+}
+
+.buy,
+.buy-1,
+.buy-2,
+.buy-3,
+.buy-4,
+.buy-5 {
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 23px;
+  min-width: 28px;
+}
+
+.flex-row-1-store {
+  align-items: center;
+  display: flex;
+  gap: 24px;
+  height: 56px;
+  min-width: 259px;
+}
+
+.flex-col-2-store {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 56px;
+  width: 143px;
+}
+
+.flex-row-2 {
+  align-items: center;
+  display: flex;
+  gap: 29px;
+  height: 56px;
+  min-width: 259px;
+}
+
+.flex-col-3-store {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 56px;
+  width: 138px;
+}
+
+.overlap-group-container-1 {
+  align-items: flex-start;
+  display: flex;
+  gap: 31px;
+  height: 242px;
+  margin-left: 1px;
+  margin-top: 18px;
+  min-width: 977px;
+}
+
+.flex-row-3 {
+  align-items: center;
+  display: flex;
+  gap: 104px;
+  height: 56px;
+  min-width: 259px;
+}
+
+.flex-col-4 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 56px;
+  width: 63px;
+}
+
+.flex-row-4 {
+  align-items: center;
+  display: flex;
+  gap: 82px;
+  height: 56px;
+  min-width: 259px;
+}
+
+.flex-col-5 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 56px;
+  width: 85px;
+}
+
+.flex-row-5 {
+  align-items: center;
+  display: flex;
+  gap: 62px;
+  height: 56px;
+  min-width: 259px;
+}
+
+.flex-col-6 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 56px;
+  width: 105px;
+}
+
