@@ -8,6 +8,7 @@ import Rainy from "./components/Rainy";
 import Snowy from "./components/Snowy";
 import Frame1 from "./components/Frame1";
 import LandingPage from "./components/LandingPage";
+import Stats from "./components/Stats";
 
 function App() {
   const [clientInfo, setClientInfo] = React.useState(null);
@@ -72,6 +73,9 @@ function App() {
         </Route>
         <Route path="/frame-1">
           <Frame1 text1="12°" sunny="Sunny" className="frame-1" />
+        </Route>
+        <Route path="/stats">
+          <Stats {...desktop1Data} />
         </Route>
         <Route path="/:path(|landing-page)">
           <LandingPage {...landingPageData} setClientInfo={setClientInfo} />
