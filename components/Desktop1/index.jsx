@@ -3,6 +3,9 @@ import Vuesaxboldelement3 from "../Vuesaxboldelement3";
 import Vuesaxlinearlogin from "../Vuesaxlinearlogin";
 import Vuesaxlinearnotification from "../Vuesaxlinearnotification";
 import "./Desktop1.css";
+import Rainy from "../Rainy";
+import Snowy from "../Snowy";
+
 
 function Desktop1(props) {
   const {
@@ -21,7 +24,7 @@ function Desktop1(props) {
     title,
     welcomeBackCustom,
     mesh08,
-    x72Score,
+
     yourLastTripToEndingLocation,
     betterThan86OfDrivers,
     i,
@@ -38,6 +41,8 @@ function Desktop1(props) {
     surname,
     text1,
     snowCloud,
+    rainyDay,
+    clearDay,
     distance,
     fuelConsumption,
     timeSpent,
@@ -100,15 +105,15 @@ function Desktop1(props) {
           <div className="overlap-group5" style={{ backgroundImage: `url(${overlapGroup5})` }}>
             <div className="flex-col-3">
               <h1 className="title">{title}</h1>
-              <p className="welcome-back-custom">{welcomeBackCustom}</p>
+              <p className="welcome-back-custom">{welcomeBackCustom.replace('[CustomerID]', clientInfo?.response.Customer_ID)}</p>
               <div className="overlap-group11 poppins-medium-big-stone-15px">
                 <div className="overlap-group7">
                   <img className="mesh-08" src={mesh08} alt="Mesh-08" />
-                  <div className="x72-score jost-bold-big-stone-24px">{x72Score}</div>
+                  <div className="x72-score jost-bold-big-stone-24px">Score: {clientInfo?.response?.COMPOSITE_DRIVER_SCORE}</div>
                   <p className="your-last-trip-to-ending-location jost-bold-big-stone-24px">
-                    {yourLastTripToEndingLocation}
+                    {clientInfo?.response.yourLastTripToEndingLocation}
                   </p>
-                  <p className="better-than-86-of-drivers poppins-medium-big-stone-15px">{betterThan86OfDrivers}</p>
+                  <p className="better-than-86-of-drivers poppins-medium-big-stone-15px">{betterThan86OfDrivers.replace('[driverAverage]', clientInfo?.response?.COMPOSITE_DRIVER_SCORE_PERCENTILE)}</p>
                   <div className="rectangle-34"></div>
                   <div className="rectangle-38"></div>
                   <div className="rectangle-35"></div>
@@ -138,17 +143,21 @@ function Desktop1(props) {
                     <span className="poppins-medium-big-stone-15px">{spanText9}</span>
                     <span className="poppins-medium-fruit-salad-15px">{spanText10}</span>
                   </div>
+
                   <div className="overlap-group3">
                     <div className="rectangle-31"></div>
                     <div className="surname poppins-medium-cararra-15px">{surname}</div>
                     <div className="text-1 jost-extra-bold-white-45px">{text1}</div>
-                    <img className="snow-cloud" src={snowCloud} alt="Snow Cloud" />
+                    {clientInfo?.response?.Weather_conditions === snowCloud && <Snowy surname="Snow Shower" text1="-10°" snowCloud="/img/snow-cloud@2x.png" />}
+                    {clientInfo?.response?.Weather_conditions === rainyDay && <Rainy text1="9°" rainy="Rainy" rainCloud="/img/rain-cloud@2x.png" />}
+                    {clientInfo?.response?.Weather_conditions === clearDay && <img className="clear" src={clearDay} alt="Clear day" />}
                   </div>
+
                 </div>
-                <div className="distance">{distance}</div>
-                <div className="fuel-consumption">{fuelConsumption}</div>
-                <div className="time-spent">{timeSpent}</div>
-                <div className="traffic-condition">{trafficCondition}</div>
+                <div className="distance">{distance}: {(clientInfo?.response?.LAST_TRIP_DISTANCE).toFixed(2)} miles</div>
+                <div className="fuel-consumption">{fuelConsumption}: </div>
+                <div className="time-spent">{timeSpent}: {(clientInfo?.response?.LAST_TRIP_TIME).toFixed(2)}</div>
+                <div className="traffic-condition">{clientInfo?.response?.Traffic_conditions}</div>
                 <div className="overlap-group10" style={{ backgroundImage: `url(${overlapGroup10})` }}>
                   <div className="rectangle-33"></div>
                   <div className="route-taken">{routeTaken}</div>
